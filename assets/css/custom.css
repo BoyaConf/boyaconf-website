@@ -1,0 +1,199 @@
+@import "./../fonts/manrope/manrope.css";
+
+:root {
+    --red: #d04436;
+    --red-dark: #a6362b;
+    --green: #3db670;
+    --green-mid: #239d56;
+    --green-dark: #1b7a43;
+}
+
+h1, h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    font-weight: 500;
+}
+
+.is-size-huge {
+    font-size: 4.5rem;
+}
+
+@media screen and (max-width: 450px) {
+    .is-size-huge {
+        font-size: 3rem;
+    }
+}
+
+.navbar {
+    background: var(--green) !important;
+}
+
+.navbar-end .navbar-item:not(:last-child) {
+    padding: 0.5rem 1rem;
+}
+
+.logo-container {
+    max-width: 50vw;
+    margin: auto;
+}
+
+.logo-cont {
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .logo-cont {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-cont {
+        font-size: 12rem;
+    }
+}
+
+.logo-cont .green {
+    color: var(--green);
+}
+
+.logo-cont .red {
+    color: var(--red);
+}
+
+.navbar-link.is-active,
+.navbar-link,
+a.navbar-item.is-active,
+a.navbar-item {
+    color: #000;
+}
+
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+    background-color: var(--green-mid);
+    color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-link.is-active,
+    .navbar-link:focus,
+    .navbar-link:focus-within,
+    .navbar-link:hover,
+    a.navbar-item.is-active,
+    a.navbar-item:focus,
+    a.navbar-item:focus-within,
+    a.navbar-item:hover {
+        background-color: var(--green-mid);
+        color: #000;
+    }
+}
+
+.navbar-brand .navbar-item,
+.navbar-brand .navbar-item:focus,
+.navbar-brand .navbar-item:focus-within,
+.navbar-brand .navbar-item:hover {
+    border-bottom: none !important;
+}
+
+.navbar-brand .navbar-item:focus,
+.navbar-brand .navbar-item:focus-within,
+.navbar-brand .navbar-item:hover {
+    background-color: var(--green-mid) !important;
+}
+
+.button.is-primary {
+    background-color: var(--green-mid);
+}
+
+.button.is-primary.is-hovered, .button.is-primary:hover {
+    background-color: var(--green-dark);
+}
+
+#social a {
+    color: var(--red);
+}
+
+#social a:hover,
+#social a:focus {
+    color: var(--red-dark);
+}
+
+.card {
+    border-radius: 6px;
+}
+
+.card-content .title:not(:last-child) {
+    margin-bottom: .4rem;
+}
+
+.avatar {
+    display: block;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.speaker-info .title {
+    margin-bottom: .4rem;
+}
+
+.has-same-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.has-same-height .card-footer {
+    margin-top: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .column.is-4-tablet {
+        width: 33.333%;
+    }
+
+    .column.is-12-mobile {
+        width: 33.333%;
+    }
+
+    .column.is-6-mobile {
+        width: 33.333%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .avatar {
+        max-width: 144px;
+    }
+}
+
+#speakers {
+    background-color: var(--green);
+}
+
+#speakers h1 {
+    color: #000;
+}
+
+#speakers .card {
+    background-color: rgba(255, 255, 255, 0.85);
+}
