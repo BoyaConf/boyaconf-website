@@ -13,8 +13,34 @@ h1, h2 {
     font-weight: 700;
 }
 
+h1 {
+    font-size: 3rem !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+}
+
+h3 {
+    font-size: 2rem !important;
+}
+
+h4 {
+    font-size: 1.5rem !important;
+}
+
+h5 {
+    font-size: 1.25rem !important;
+}
+
+h6 {
+    font-size: 1rem !important;
+}
+
+
 body {
     font-weight: 500;
+    color: #000;
 }
 
 .is-size-huge {
@@ -202,4 +228,80 @@ a.navbar-item:hover {
 
 #speakers .card {
     background-color: rgba(255, 255, 255, 0.85);
+}
+
+ul {
+    list-style-type: disc;
+    padding-inline-start: 1.2rem;
+}
+
+.card {
+    border-radius: .4rem;
+}
+
+.card-content h6 {
+    margin-bottom: .4rem;
+}
+
+.help {
+    margin-top: .5rem;
+}
+
+.table.is-bordered th, .table.is-bordered td {
+    border-color: #000;
+}
+
+.table th {
+    background-color: #eee;
+}
+
+.checkbox input {
+    margin-right: .4rem;
+    padding-top: .2rem;
+}
+
+.field:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.label:not(:last-child) {
+    margin-bottom: .7rem;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-item.has-dropdown.is-active .navbar-link,
+    .navbar-item.has-dropdown:focus .navbar-link,
+    .navbar-item.has-dropdown:hover .navbar-link {
+        background-color: var(--green-mid) !important;
+    }
+}
+
+.navbar-dropdown {
+    background-color: var(--green);
+    border-top: none;
+    box-shadow: 0 8px 8px rgba(10, 10, 10, .2);
+    padding-bottom: .6rem;
+    padding-top: .6rem;
+}
+
+.navbar-dropdown .navbar-item {
+    min-height: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-dropdown .navbar-item {
+        padding: .6rem 1rem !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-dropdown a.navbar-item:focus,
+    .navbar-dropdown a.navbar-item:hover {
+        background-color: var(--green-mid);
+        color: #000;
+    }
 }
