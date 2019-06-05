@@ -6,6 +6,7 @@
     --green: #3db670;
     --green-mid: #239d56;
     --green-dark: #1b7a43;
+    --dark-blue: #00202b;
 }
 
 h1, h2 {
@@ -67,9 +68,18 @@ body {
     padding: 0.5rem 1rem;
 }
 
+.navbar.has-shadow {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
 .logo-container {
     max-width: 50vw;
     margin: auto;
+}
+
+#main-content {
+    background-color: var(--dark-blue) !important;
+    color: #fff !important;
 }
 
 .logo-cont {
@@ -80,7 +90,7 @@ body {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 700;
     text-align: center;
     margin: auto;
@@ -88,22 +98,22 @@ body {
 
 @media screen and (max-width: 450px) {
     .logo-cont {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .logo-cont {
-        font-size: 12rem;
+        font-size: 7rem;
     }
 }
 
 .logo-cont .green {
-    color: var(--green);
+    color: var(--green) !important;
 }
 
 .logo-cont .red {
-    color: var(--red);
+    color: var(--red) !important;
 }
 
 .navbar-link.is-active,
