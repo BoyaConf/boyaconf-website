@@ -9,6 +9,10 @@
     --dark-blue: #00202b;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
@@ -162,12 +166,37 @@ a.navbar-item:hover {
     background-color: var(--green-mid) !important;
 }
 
-.button.is-primary {
-    background-color: var(--green-mid);
+.navbar-dropdown .navbar-item {
+    padding: 0.5rem 1rem !important;
 }
 
-.button.is-primary.is-hovered, .button.is-primary:hover {
-    background-color: var(--green-dark);
+.button.is-primary {
+    background-color: var(--green-mid) !important;
+}
+
+.button.is-primary.is-hovered,
+.button.is-primary:hover,
+#mc_embed_signup .button.is-primary.is-hovered,
+#mc_embed_signup .button.is-primary:hover {
+    background-color: var(--green-dark) !important;
+}
+
+#mc_embed_signup .button {
+    background-color: var(--green-mid) !important;
+    border: none;
+    color: #fff !important;
+    cursor: pointer;
+    justify-content: center;
+    padding: calc(.375em - 1px) .75em;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1rem !important;
+    height: 2.25em !important;
+    line-height: 1.5;
+}
+
+#mc_embed_signup .mc-field-group input {
+    font-size: 1rem;
 }
 
 #social a {
@@ -195,7 +224,11 @@ a.navbar-item:hover {
 }
 
 .speaker-info .title {
-    margin-bottom: .4rem;
+    margin-bottom: .6rem !important;
+}
+
+.speaker-info .title:not(.is-spaced) + .subtitle {
+    margin-top: .2rem !important;
 }
 
 .has-same-height {
@@ -228,15 +261,15 @@ a.navbar-item:hover {
     }
 }
 
-#speakers {
+#sponsors {
     background-color: var(--green);
 }
 
-#speakers h1 {
+#sponsors h1 {
     color: #000;
 }
 
-#speakers .card {
+#sponsors .card {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
