@@ -20,27 +20,27 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
 }
 
 h5 {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
 }
 
 h6 {
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 
@@ -81,6 +81,13 @@ body {
 
 .navbar.has-shadow {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.navbar-burger,
+.navbar-burger.is-active,
+.navbar-burger:hover,
+.navbar-burger:focus {
+    color: #fff;
 }
 
 .logo-container {
