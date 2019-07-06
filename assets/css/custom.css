@@ -53,9 +53,15 @@ body {
     font-size: 4.5rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 680px) {
     .is-size-huge {
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .is-size-huge {
+        font-size: 2.5rem;
     }
 }
 
