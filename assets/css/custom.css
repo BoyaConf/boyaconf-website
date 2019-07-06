@@ -144,6 +144,7 @@ a.navbar-item:hover {
 .navbar-brand .navbar-item:focus-within,
 .navbar-brand .navbar-item:hover {
     border-bottom: none !important;
+    color: #fff;
 }
 
 .navbar-brand .navbar-item:focus,
