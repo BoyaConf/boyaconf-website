@@ -2,7 +2,7 @@
 
 :root {
     --red: #eb3b5a;
-    --red-dark: #bc2f48;
+    --red-dark: #d43551;
     --green: #4dcc89;
     --green-mid: #20bf6b;
     --green-dark: #1a9956;
@@ -219,12 +219,15 @@ a.navbar-item:hover {
     font-size: 1rem;
 }
 
-#social a {
+#social a,
+footer a {
     color: var(--red);
 }
 
 #social a:hover,
-#social a:focus {
+#social a:focus,
+footer a:hover,
+footer a:focus {
     color: var(--red-dark);
 }
 
@@ -407,4 +410,9 @@ ul {
         background-color: #eee;
         color: var(--dark-blue-light);
     }
+}
+
+.footer {
+    padding: 3rem 1.5rem;
+    background-color: rgba(0, 32, 43, .05);
 }
