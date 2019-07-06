@@ -1,12 +1,13 @@
 @import "./../fonts/manrope/manrope.css";
 
 :root {
-    --red: #d04436;
-    --red-dark: #a6362b;
-    --green: #3db670;
-    --green-mid: #239d56;
-    --green-dark: #1b7a43;
+    --red: #eb3b5a;
+    --red-dark: #bc2f48;
+    --green: #4dcc89;
+    --green-mid: #20bf6b;
+    --green-dark: #1a9956;
     --dark-blue: #00202b;
+    --dark-blue-light: #1A3640;
 }
 
 html {
@@ -59,12 +60,12 @@ body {
 }
 
 .navbar {
-    background: var(--green) !important;
+    background: var(--dark-blue) !important;
 }
 
 @media screen and (max-width: 1023px) {
     .navbar-menu {
-        background: var(--green) !important;
+        background: var(--dark-blue) !important;
     }
 }
 
@@ -88,12 +89,12 @@ body {
 
 .logo-cont {
     color: #fff;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    -webkit-text-stroke: 1px var(--dark-blue);
+    text-shadow: 1px 1px 0 var(--dark-blue),
+    -1px -1px 0 var(--dark-blue),
+    1px -1px 0 var(--dark-blue),
+    -1px 1px 0 var(--dark-blue),
+    1px 1px 0 var(--dark-blue);
     font-size: 5rem;
     font-weight: 700;
     text-align: center;
@@ -120,11 +121,10 @@ body {
     color: var(--red) !important;
 }
 
-.navbar-link.is-active,
 .navbar-link,
-a.navbar-item.is-active,
 a.navbar-item {
-    color: #000;
+    background-color: var(--dark-blue);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-link.is-active,
@@ -135,22 +135,8 @@ a.navbar-item.is-active,
 a.navbar-item:focus,
 a.navbar-item:focus-within,
 a.navbar-item:hover {
-    background-color: var(--green-mid);
-    color: #000;
-}
-
-@media screen and (min-width: 1024px) {
-    .navbar-link.is-active,
-    .navbar-link:focus,
-    .navbar-link:focus-within,
-    .navbar-link:hover,
-    a.navbar-item.is-active,
-    a.navbar-item:focus,
-    a.navbar-item:focus-within,
-    a.navbar-item:hover {
-        background-color: var(--green-mid);
-        color: #000;
-    }
+    background-color: var(--dark-blue-light);
+    color: #fff;
 }
 
 .navbar-brand .navbar-item,
@@ -163,7 +149,7 @@ a.navbar-item:hover {
 .navbar-brand .navbar-item:focus,
 .navbar-brand .navbar-item:focus-within,
 .navbar-brand .navbar-item:hover {
-    background-color: var(--green-mid) !important;
+    background-color: var(--dark-blue-light) !important;
 }
 
 .navbar-dropdown .navbar-item {
@@ -312,19 +298,20 @@ ul {
 }
 
 .navbar-link:not(.is-arrowless)::after {
-    border-color: #000;
+    border-color: #fff;
 }
 
 @media screen and (min-width: 1024px) {
     .navbar-item.has-dropdown.is-active .navbar-link,
     .navbar-item.has-dropdown:focus .navbar-link,
     .navbar-item.has-dropdown:hover .navbar-link {
-        background-color: var(--green-mid) !important;
+        background-color: var(--dark-blue-light) !important;
+        color: #fff;
     }
 }
 
 .navbar-dropdown {
-    background-color: var(--green);
+    background-color: var(--dark-blue);
     border-top: none;
     box-shadow: 0 8px 8px rgba(10, 10, 10, .2);
     padding-bottom: .6rem;
@@ -342,9 +329,19 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
+    .navbar-dropdown {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .navbar-dropdown .navbar-item {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
     .navbar-dropdown a.navbar-item:focus,
     .navbar-dropdown a.navbar-item:hover {
-        background-color: var(--green-mid);
-        color: #000;
+        background-color: #eee;
+        color: var(--dark-blue-light);
     }
 }
