@@ -156,8 +156,36 @@ a.navbar-item:hover {
     padding: 0.5rem 1rem !important;
 }
 
+.button {
+    border-color: rgba(0, 0, 0, 0);
+    --shadow-col-a: rgba(170, 170, 170, .4);
+    --shadow-col-b: rgba(170, 170, 170, .28);
+    --shadow-col-c: rgba(170, 170, 170, .24);
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    -webkit-box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+    -moz-box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+    box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+}
+
+.button:hover,
+.button:focus,
+.button.is-active {
+    background-color: #f5f5f5;
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+    -moz-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+    box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+}
+
 .button.is-primary {
     background-color: var(--green-mid) !important;
+    --shadow-col-a: rgba(32, 191, 107, .4);
+    --shadow-col-b: rgba(32, 191, 107, .28);
+    --shadow-col-c: rgba(32, 191, 107, .24);
 }
 
 .button.is-primary.is-hovered,
@@ -165,10 +193,16 @@ a.navbar-item:hover {
 #mc_embed_signup .button.is-primary.is-hovered,
 #mc_embed_signup .button.is-primary:hover {
     background-color: var(--green-dark) !important;
+    --shadow-col-a: rgba(26, 153, 86, .4);
+    --shadow-col-b: rgba(26, 153, 86, .28);
+    --shadow-col-c: rgba(26, 153, 86, .24);
 }
 
 #mc_embed_signup .button {
     background-color: var(--green-mid) !important;
+    --shadow-col-a: rgba(32, 191, 107, .4);
+    --shadow-col-b: rgba(32, 191, 107, .28);
+    --shadow-col-c: rgba(32, 191, 107, .24);
     border: none;
     color: #fff !important;
     cursor: pointer;
@@ -196,6 +230,21 @@ a.navbar-item:hover {
 
 .card {
     border-radius: 6px;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+.card:hover,
+.card:focus,
+.card.is-active {
+    --shadow-col: rgba(116, 125, 140, .25);
+    --bord-col: rgba(116, 125, 140, .1);
+    -webkit-box-shadow: 0 4px 12px 1px var(--shadow-col), 0 0 0 1px var(--bord-col);
+    -moz-box-shadow: 0 4px 12px 1px var(--shadow-col), 0 0 0 1px var(--bord-col);
+    box-shadow: 0 4px 12px 1px var(--shadow-col), 0 0 0 1px var(--bord-col);
 }
 
 .card-content .title:not(:last-child) {
@@ -258,6 +307,13 @@ a.navbar-item:hover {
 #sponsors .card {
     background-color: rgba(255, 255, 255, 0.85);
 }
+
+#sponsors .card.is-active,
+#sponsors .card:hover,
+#sponsors .card:focus {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
 
 ul {
     list-style-type: disc;
