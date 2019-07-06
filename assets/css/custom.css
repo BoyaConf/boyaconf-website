@@ -314,6 +314,13 @@ a.navbar-item:hover {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
+#sponsors .buttons {
+    justify-content: center;
+}
+
+.buttons .button:not(:last-child):not(.is-fullwidth) {
+    margin-right: .8rem;
+}
 
 ul {
     list-style-type: disc;
