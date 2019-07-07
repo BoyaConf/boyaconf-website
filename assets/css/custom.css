@@ -67,6 +67,13 @@ body {
 
 .navbar {
     background: var(--dark-blue) !important;
+    font-size: 1.2rem !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        min-height: 4rem;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -90,9 +97,34 @@ body {
     color: #fff;
 }
 
-.logo-container {
-    max-width: 50vw;
-    margin: auto;
+.hero:first-child .hero-body {
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 769px), print {
+    .hero.is-medium .hero-body {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 1440px), print {
+    .hero.is-medium:first-child {
+        min-height: calc(100vh - 4rem);
+    }
+
+    .hero.is-medium:first-child .hero-body {
+        padding-top: 5rem;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1441px), print {
+    .hero.is-medium .hero-body {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        align-items: flex-start;
+    }
 }
 
 #main-content {
@@ -108,21 +140,18 @@ body {
     1px -1px 0 var(--dark-blue),
     -1px 1px 0 var(--dark-blue),
     1px 1px 0 var(--dark-blue);
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
-    margin: auto;
-}
-
-@media screen and (max-width: 450px) {
-    .logo-cont {
-        font-size: 3rem;
-    }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.6rem;
 }
 
 @media screen and (min-width: 1024px) {
     .logo-cont {
-        font-size: 7rem;
+        font-size: 4.8rem;
     }
 }
 
@@ -132,6 +161,24 @@ body {
 
 .logo-cont .red {
     color: var(--red) !important;
+}
+
+.logo-cont img.logo {
+    max-width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 450px) {
+    .logo-cont {
+        font-size: 3rem;
+    }
+
+    .logo-cont img.logo {
+        max-width: 70vw;
+    }
 }
 
 .navbar-link,
@@ -231,6 +278,11 @@ a.navbar-item:hover {
 
 #mc_embed_signup .mc-field-group input {
     font-size: 1rem;
+}
+
+#social {
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
 }
 
 #social a,
