@@ -4,7 +4,7 @@
     --red: #eb3b5a;
     --red-dark: #d43551;
     --green: #4dcc89;
-    --green-mid: #20bf6b;
+    --green-mid: #1dac60;
     --green-dark: #1a9956;
     --dark-blue: #00202b;
     --dark-blue-light: #1A3640;
@@ -39,8 +39,8 @@ h5 {
     font-size: 1.25rem;
 }
 
-h6 {
-    font-size: 1rem;
+h6, p, .button {
+    font-size: 1.05rem;
 }
 
 
@@ -67,7 +67,7 @@ body {
 
 .navbar {
     background: var(--dark-blue) !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -518,9 +518,16 @@ body hr {
     }
 }
 
-a:hover:not(.button) {
+p a:hover,
+p a:focus {
     color: #3273dc;
     text-decoration: underline;
+}
+
+a .card,
+a:hover .card,
+a:focus .card {
+    text-decoration: none !important;
 }
 
 .is-paypal {
@@ -535,4 +542,12 @@ a:hover:not(.button) {
 .is-paypal:focus {
     background-color: #1a4593;
     color: #fff;
+}
+
+.navbar-item.has-dropdown .navbar-link {
+    padding-left: 1rem;
+}
+
+.navbar-link:not(.is-arrowless) {
+    padding-right: 3rem;
 }
