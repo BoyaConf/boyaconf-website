@@ -487,4 +487,9 @@ ul {
 .footer {
     padding: 3rem 1.5rem;
     background-color: rgba(0, 32, 43, .05);
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
 }
