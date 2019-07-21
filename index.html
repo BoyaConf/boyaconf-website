@@ -67,8 +67,12 @@
                     <div class="container">
                         <div class="navbar-brand">
                             <a class="navbar-item" href="/">
-                                <!--<img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">-->
-                                BoyaConf
+                                <img src="./assets/img/boyaconf.svg" alt="BC">
+                                <div style="display: flex; flex-direction: row">
+                                    <span class="green"><&nbsp;</span>
+                                    BoyaConf
+                                    <span class="red">&nbsp;></span>
+                                </div>
                             </a>
                             <a role="button"
                                class="navbar-burger"
@@ -88,7 +92,7 @@
                                 </a>
                                 -->
                                 <a class="navbar-item" href="#speakers">
-                                    Speakers
+                                    Ponentes
                                 </a>
                                 <!--
                                 <a class="navbar-item">
@@ -123,7 +127,11 @@
                             <img class="logo"
                                  src="./assets/img/boyaconf.svg"
                                  alt="BoyaConf">
-                            Boya<span class="red">Conf</span>
+                            <div class="logo-text">
+                                <span class="green"><</span>
+                                BoyaConf
+                                <span class="red">></span>
+                            </div>
                         </div>
                     </div>
 
@@ -136,21 +144,19 @@
                         -->
                     </div>
 
-                    <div id="social">
+                    <div id="social" class="mdis">
                         <a href="https://twitter.com/BoyaConf">
-                            <span class="mdi mdi-48px mdi-twitter-box"></span>
-                        </a>
-                        <a href="mailto:hola@boyaconf.com">
-                            <span class="mdi mdi-48px mdi-email-box"></span>
-                        </a>
-                        <!--
-                        <a href="https://facebook.com/BoyaConf">
-                            <span class="mdi mdi-48px mdi-facebook-box"></span>
+                            <span class="mdi mdi-24px mdi-twitter"></span>
                         </a>
                         <a href="https://instagram.com/BoyaConf">
-                            <span class="mdi mdi-48px mdi-instagram"></span>
+                            <span class="mdi mdi-24px mdi-instagram"></span>
                         </a>
-                        -->
+                        <a href="https://www.linkedin.com/company/boyaconf">
+                            <span class="mdi mdi-24px mdi-linkedin"></span>
+                        </a>
+                        <a href="mailto:hola@boyaconf.com">
+                            <span class="mdi mdi-24px mdi-email"></span>
+                        </a>
                     </div>
 
                     <div id="info">
@@ -182,8 +188,9 @@
         <section class="hero is-medium" id="speakers">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="is-size-huge has-text-centered">SPEAKERS</h1>
-                    <br><br><br>
+                    <div class="section-title-container">
+                        <h1 class="section-title">Ponentes</h1>
+                    </div>
 
                     <div class="columns is-centered is-multiline is-mobile">
                         <div class="column is-6-mobile is-4-tablet is-3-desktop speaker-info">
@@ -216,8 +223,9 @@
         <section class="hero is-medium" id="sponsors">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="is-size-huge has-text-centered">PATROCINIOS</h1>
-                    <br>
+                    <div class="section-title-container">
+                        <h1 class="section-title">Patrocinios</h1>
+                    </div>
 
                     <div class="columns is-centered is-multiline is-mobile">
                         <div class="column is-12-mobile is-2-tablet is-3-desktop"></div>
@@ -301,11 +309,13 @@
         <hr>
         <section class="hero is-medium" id="subscribe">
             <div class="hero-body">
-                <div class="container">
+                <div class="container has-text-centered">
+                    <div class="section-title-container">
+                        <h1 class="section-title">Suscríbete!</h1>
+                    </div>
                     <!-- Begin Mailchimp Signup Form -->
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-                          rel="stylesheet"
-                          type="text/css">
+                          rel="stylesheet" type="text/css">
                     <style type="text/css">
                         #mc_embed_signup {
                             background: #fff;
@@ -321,7 +331,6 @@
                               target="_blank"
                               novalidate>
                             <div id="mc_embed_signup_scroll">
-                                <h2>Entérate de todo!</h2>
                                 <div class="indicates-required"><span class="asterisk">*</span>
                                     indica que es requerido
                                 </div>
@@ -366,25 +375,24 @@
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>Preguntas?</p>
-                <div>
+                <div class="mdis">
                     <a href="https://twitter.com/BoyaConf">
-                        <span class="mdi mdi-48px mdi-twitter-box"></span>
-                    </a>
-                    <a href="mailto:hola@boyaconf.com">
-                        <span class="mdi mdi-48px mdi-email-box"></span>
-                    </a>
-                    <!--
-                    <a href="https://facebook.com/BoyaConf">
-                        <span class="mdi mdi-48px mdi-facebook-box"></span>
+                        <span class="mdi mdi-24px mdi-twitter"></span>
                     </a>
                     <a href="https://instagram.com/BoyaConf">
-                        <span class="mdi mdi-48px mdi-instagram"></span>
+                        <span class="mdi mdi-24px mdi-instagram"></span>
                     </a>
-                    -->
+                    <a href="https://www.linkedin.com/company/boyaconf">
+                        <span class="mdi mdi-24px mdi-linkedin"></span>
+                    </a>
+                    <a href="mailto:hola@boyaconf.com">
+                        <span class="mdi mdi-24px mdi-email"></span>
+                    </a>
                 </div>
             </div>
         </footer>
 
+        <script src="./assets/js/particles.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
