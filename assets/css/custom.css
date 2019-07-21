@@ -8,14 +8,18 @@
     --green-dark: #1a9956;
     --dark-blue: #00202b;
     --dark-blue-light: #0D2B36;
+    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+body, html {
+    font-family: "Manrope", var(--system-font);
+}
+
 h1, h2 {
-    font-family: "Manrope", sans-serif;
     font-weight: 800;
 }
 
@@ -358,6 +362,7 @@ a.navbar-item:hover {
 }
 
 .button {
+    font-family: "Manrope", sans-serif !important;
     min-width: 48px;
     min-height: 40px;
     font-weight: 600;
@@ -415,6 +420,7 @@ a.navbar-item:hover {
 }
 
 #mc_embed_signup .button {
+    font-family: "Manrope", sans-serif;
     background-color: var(--green-mid) !important;
     --shadow-col-a: rgba(32, 191, 107, .4);
     --shadow-col-b: rgba(32, 191, 107, .28);
@@ -680,6 +686,7 @@ a:focus .card {
 }
 
 .is-paypal {
+    font-family: "Manrope", sans-serif;
     background-color: #003087;
     color: #fff;
     --shadow-col-a: rgba(0, 43, 122, .4);
