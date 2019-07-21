@@ -144,33 +144,38 @@ body {
 
 @media screen and (min-width: 769px), print {
     .hero.is-medium .hero-body {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 3.6rem;
+        padding-bottom: 3.6rem;
     }
 }
 
 @media screen and (max-width: 1440px), print {
     .hero.is-medium:first-of-type {
-        min-height: calc(100vh - 4rem);
+        min-height: calc(100vh - 6rem);
     }
 
     .hero.is-medium:first-of-type .hero-body {
-        padding-top: 5rem;
+        padding-top: 4rem;
         align-items: flex-start;
     }
 }
 
 @media screen and (min-width: 1441px), print {
     .hero.is-medium .hero-body {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 4.4rem;
+        padding-bottom: 4rem;
         align-items: flex-start;
     }
 }
 
+#desc {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
 :not(.footer) .mdis {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
 }
 
 .mdis a {
@@ -254,7 +259,7 @@ body {
 }
 
 .logo-cont img.logo {
-    max-width: 17vw;
+    max-width: 12vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
