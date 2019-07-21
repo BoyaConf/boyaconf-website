@@ -65,7 +65,15 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     vertical-align: middle;
+    margin-top: .8rem;
     margin-bottom: 3rem;
+}
+
+.section-subtitle-container {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 3.6rem;
+    margin-bottom: 2rem;
 }
 
 .hero:nth-of-type(2n) .section-title-container {
@@ -79,7 +87,7 @@ body {
 .section-title {
     width: auto;
     margin: auto;
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 800;
     vertical-align: middle;
     text-transform: capitalize;
@@ -88,13 +96,13 @@ body {
 
 @media screen and (max-width: 680px) {
     .section-title {
-        font-size: 3.6rem;
+        font-size: 3.4rem;
     }
 }
 
 @media screen and (max-width: 450px) {
     .section-title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -160,16 +168,24 @@ body {
     }
 }
 
-.mdis a .mdi:not(last-of-type) {
-    margin-right: .6rem;
+:not(.footer) .mdis {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-span.mdi::before {
+.mdis a {
+    margin-right: .2rem;
+    margin-left: .2rem;
+    padding: .1rem;
+}
+
+.mdis a span.mdi::before {
     background-image: url('./../img/boyaconf-rect.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     text-align: center;
+    min-width: 44px;
     width: auto;
     height: auto;
     padding: .6rem;
@@ -177,14 +193,14 @@ span.mdi::before {
     color: #fff;
 }
 
-a:hover span.mdi::before,
-a:focus span.mdi::before {
+.mdis a:hover span.mdi::before,
+.mdis a:focus span.mdi::before {
     color: #fff;
     background-image: url('./../img/boyaconf-rect-dark.svg');
     fill: var(--red-dark);
 }
 
-.hero.has-logo:first-of-type {
+.hero.has-logo {
     background-color: var(--dark-blue);
     background-image: url('./../img/hero-bg.jpg');
     background-size: cover;
@@ -245,19 +261,31 @@ a:focus span.mdi::before {
     margin-bottom: 2.4rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 375px) {
     .logo-cont {
         font-size: 3rem;
     }
+}
+
+@media screen and (max-width: 374px) {
+    .logo-cont {
+        font-size: 2.4rem;
+    }
 
     .logo-cont img.logo {
-        max-width: 60vw;
+        max-width: 40vw;
     }
 }
 
-@media screen and (min-width: 451px) and (max-width: 780px) {
+@media screen and (min-width: 375px) and (max-width: 600px) {
     .logo-cont img.logo {
         max-width: 40vw;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 780px) {
+    .logo-cont img.logo {
+        max-width: 30vw;
     }
 }
 
@@ -311,6 +339,9 @@ a.navbar-item:hover {
 }
 
 .button {
+    min-width: 48px;
+    min-height: 40px;
+    font-weight: 600;
     border-color: rgba(0, 0, 0, 0);
     --shadow-col-a: rgba(170, 170, 170, .4);
     --shadow-col-b: rgba(170, 170, 170, .28);
@@ -333,6 +364,18 @@ a.navbar-item:hover {
     -webkit-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
     -moz-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
     box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+}
+
+.buttons {
+    margin-top: 1.6rem;
+}
+
+.buttons .button {
+    margin-bottom: 1.2rem;
+}
+
+.button .mdi {
+    margin-right: .8rem;
 }
 
 .button.is-primary {
@@ -364,30 +407,41 @@ a.navbar-item:hover {
     padding: calc(.375em - 1px) .75em;
     text-align: center;
     white-space: nowrap;
-    font-size: 1rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
     height: 2.25em !important;
     line-height: 1.5;
+    margin-top: .8rem !important;
+}
+
+#mc_embed_signup .clear {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+#mc_embed_signup .clear .button {
+    align-items: flex-end !important;
+    right: 0 !important;
+    margin-right: 0 !important;
+}
+
+#mc_embed_signup .indicates-required {
+    margin-right: 0 !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
 }
 
 #mc_embed_signup .mc-field-group input {
     font-size: 1rem;
 }
 
-#social {
-    margin-top: 1.6rem;
-    margin-bottom: 2.4rem;
-}
-
-#social a,
-.footer a {
-    color: var(--red);
-}
-
-#social a:hover,
-#social a:focus,
-.footer a:hover,
-.footer a:focus {
-    color: var(--red-dark);
+@media screen and (min-width: 1024px) {
+    #mc_embed_signup {
+        max-width: 70%;
+        margin: auto;
+    }
 }
 
 .card {
@@ -486,7 +540,7 @@ a.navbar-item:hover {
 }
 
 .buttons .button:not(:last-child):not(.is-fullwidth) {
-    margin-right: .8rem;
+    margin-right: 1.2rem;
 }
 
 ul {

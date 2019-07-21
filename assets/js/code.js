@@ -1,6 +1,6 @@
 function getCodeOfConduct(english = true) {
   let xhr = new XMLHttpRequest();
-  const baseUrl = 'https://raw.githubusercontent.com/BoyaConf/code-of-conduct/bc/';
+  const baseUrl = 'https://raw.githubusercontent.com/boyaconf/code-of-conduct/bc/';
   const fileName = english ? 'readme.md' : 'readme-es.md';
   xhr.open('GET', `${baseUrl}${fileName}`, true);
   xhr.onreadystatechange = function () {
