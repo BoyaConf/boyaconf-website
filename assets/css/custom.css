@@ -295,10 +295,24 @@ body {
 
 .navbar-brand a.navbar-item {
     font-weight: 600;
+    flex-direction: row;
+    flex: 1;
 }
 
-.navbar-brand a.navbar-item img {
-    margin-right: 1rem;
+.navbar-brand a.navbar-item .brand-text {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-right: 1.6rem;
+    margin-left: 1.2rem;
+}
+
+.navbar-brand a.navbar-item .brand-text p {
+    font-size: 1.1rem !important;
+}
+
+.navbar-brand a.navbar-item .brand-text span {
+    font-weight: 900 !important;
 }
 
 .navbar-link,
