@@ -160,15 +160,6 @@ body {
     }
 }
 
-.hero:first-of-type {
-    background-color: var(--dark-blue);
-    background-image: url('./../img/hero-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .mdis a .mdi:not(last-of-type) {
     margin-right: .6rem;
 }
@@ -191,6 +182,15 @@ a:focus span.mdi::before {
     color: #fff;
     background-image: url('./../img/boyaconf-rect-dark.svg');
     fill: var(--red-dark);
+}
+
+.hero.has-logo:first-of-type {
+    background-color: var(--dark-blue);
+    background-image: url('./../img/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #main-content {
