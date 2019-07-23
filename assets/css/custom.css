@@ -689,7 +689,7 @@ body hr {
 
 a:not(.navbar-item):not(.card):not(.button):not(.mdi),
 a:not(.navbar-item):not(.card):not(.button):not(.mdi):visited {
-    color: var(--green-mid);
+    color: var(--green-dark);
 }
 
 a:not(.navbar-item):not(.card):not(.button):not(.mdi):hover,
