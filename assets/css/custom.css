@@ -9,7 +9,16 @@
     --green-darker: #1f5237;
     --dark-blue: #00202b;
     --dark-blue-light: #0D2B36;
+    --selection-color: rgba(77, 204, 137, .35);
     --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+::selection {
+    background: var(--selection-color);
+}
+
+::-moz-selection {
+    background: var(--selection-color);
 }
 
 html {
