@@ -19,6 +19,7 @@ html {
 
 body, html {
     font-family: "Manrope", var(--system-font);
+    font-size: 1rem;
 }
 
 h1, h2,
@@ -432,6 +433,7 @@ a.navbar-item:hover {
     padding: calc(.375em - 1px) .75em;
     text-align: center;
     white-space: nowrap;
+    font-size: 1.1rem !important;
     font-weight: 600 !important;
     height: 2.25em !important;
     line-height: 1.5;
@@ -675,25 +677,25 @@ body hr {
     }
 }
 
-p a,
-p a:visited {
+a:not(.navbar-item):not(.card):not(.button),
+a:not(.navbar-item):not(.card):not(.button):visited {
     color: var(--green-mid);
 }
 
-p a:hover,
-p a:focus,
-p a.is-active {
+a:not(.navbar-item):not(.card):not(.button):hover,
+a:not(.navbar-item):not(.card):not(.button):focus,
+a:not(.navbar-item):not(.card):not(.button).is-active {
     color: var(--green-dark);
 }
 
-p a:hover,
-p a:focus {
+a:not(.navbar-item):not(.card):not(.button):hover,
+a:not(.navbar-item):not(.card):not(.button):focus {
     text-decoration: underline;
 }
 
-a .card,
-a:hover .card,
-a:focus .card {
+a.card,
+a:hover.card,
+a:focus.card {
     text-decoration: none !important;
 }
 
