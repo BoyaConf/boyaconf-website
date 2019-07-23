@@ -121,8 +121,8 @@ b {
     vertical-align: middle;
     margin-top: 1.2rem;
     margin-bottom: 3rem;
-    padding-left: .6rem;
-    padding-right: .6rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
 }
 
 .section-subtitle-container {
@@ -143,26 +143,11 @@ b {
 .section-title {
     width: auto;
     margin: auto;
-    /* font-size: 4rem; */
     font-weight: 800;
     vertical-align: middle;
     text-transform: capitalize;
     text-align: center;
 }
-
-/*
-@media screen and (max-width: 680px) {
-    .section-title {
-        font-size: 3.4rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .section-title {
-        font-size: 2.2rem;
-    }
-}
-*/
 
 .navbar {
     background: var(--dark-blue) !important;
@@ -300,30 +285,9 @@ b {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* font-size: 3rem; */
     font-weight: 700;
     margin-bottom: 2rem;
 }
-
-/*
-@media screen and (max-width: 374px) {
-    .logo-cont {
-        font-size: 2.4rem;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    .logo-cont {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .logo-cont {
-        font-size: 4.8rem;
-    }
-}
-*/
 
 .logo-cont img.logo {
     max-width: 170px;
@@ -353,6 +317,7 @@ b {
 
 .navbar-brand a.navbar-item .brand-text p {
     font-size: 1.1rem !important;
+    letter-spacing: .015rem;
 }
 
 .navbar-brand a.navbar-item .brand-text span {
@@ -363,7 +328,7 @@ b {
 a.navbar-item {
     background-color: var(--dark-blue);
     color: #fff;
-    letter-spacing: .02rem;
+    letter-spacing: .015rem;
 }
 
 .navbar-link.is-active,
