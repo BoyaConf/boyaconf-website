@@ -223,7 +223,7 @@ b {
     padding: .1rem;
 }
 
-.mdis a span.mdi::before {
+.mdis a.mdi::before {
     background-image: url('./../img/boyaconf-rect.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -235,10 +235,11 @@ b {
     padding: .6rem;
     fill: var(--red);
     color: #fff;
+    text-decoration: none !important;
 }
 
-.mdis a:hover span.mdi::before,
-.mdis a:focus span.mdi::before {
+.mdis a:hover.mdi::before,
+.mdis a:focus.mdi::before {
     color: #fff;
     background-image: url('./../img/boyaconf-rect-dark.svg');
     fill: var(--red-dark);
@@ -677,19 +678,19 @@ body hr {
     }
 }
 
-a:not(.navbar-item):not(.card):not(.button),
-a:not(.navbar-item):not(.card):not(.button):visited {
+a:not(.navbar-item):not(.card):not(.button):not(.mdi),
+a:not(.navbar-item):not(.card):not(.button):not(.mdi):visited {
     color: var(--green-mid);
 }
 
-a:not(.navbar-item):not(.card):not(.button):hover,
-a:not(.navbar-item):not(.card):not(.button):focus,
-a:not(.navbar-item):not(.card):not(.button).is-active {
+a:not(.navbar-item):not(.card):not(.button):not(.mdi):hover,
+a:not(.navbar-item):not(.card):not(.button):not(.mdi):focus,
+a:not(.navbar-item):not(.card):not(.button):not(.mdi).is-active {
     color: var(--green-dark);
 }
 
-a:not(.navbar-item):not(.card):not(.button):hover,
-a:not(.navbar-item):not(.card):not(.button):focus {
+a:not(.navbar-item):not(.card):not(.button):not(.mdi):hover,
+a:not(.navbar-item):not(.card):not(.button):not(.mdi):focus {
     text-decoration: underline;
 }
 
