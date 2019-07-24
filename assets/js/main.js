@@ -52,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-});
 
-window.onscroll = scrollFunction;
-window.addEventListener('resize', calculateMinScrolled);
+  window.onscroll = scrollFunction;
+  window.addEventListener('resize', calculateMinScrolled);
+  scrollFunction();
+});
