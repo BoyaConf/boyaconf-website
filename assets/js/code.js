@@ -6,7 +6,7 @@ function getCodeOfConduct(english = true) {
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       const body = xhr.responseText || '';
-      let converter = new showdown.Converter();
+      let converter = new showdown.Converter({ openLinksInNewWindow: true });
       if (converter !== null && converter !== undefined) {
         let html = converter.makeHtml(body);
         if (html !== null && html !== undefined) {
