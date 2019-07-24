@@ -412,6 +412,13 @@ a.navbar-item:hover {
     box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
 }
 
+.button.simple,
+.button.simple:hover,
+.button.simple:focus,
+.button.simple.is-active {
+    border-color: #eee;
+}
+
 .buttons {
     margin-top: 2rem;
 }
@@ -782,11 +789,16 @@ a:focus {
     -webkit-align-items: center;
     align-items: center;
     margin: auto;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
 }
 
 #sponsors .card .card-content img {
     display: block;
-    max-height: 144px;
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 192px;
     align-self: center;
     vertical-align: middle;
     margin: auto;
