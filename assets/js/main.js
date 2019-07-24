@@ -1,5 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
+let minScrolled = 20;
 
+function calculateMinScrolled() {
+  const bodyScrollHeight = document.body.scrollHeight || 0;
+  const eleScrollHeight = document.documentElement.scrollHeight || 0;
+
+  let expectedHeight = bodyScrollHeight || document.documentElement.scrollHeight || 0;
+  if (bodyScrollHeight > 0 && eleScrollHeight > 0) {
+    expectedHeight = Math.ceil(Math.min(bodyScrollHeight, eleScrollHeight));
+  }
+
+  minScrolled = Math.ceil(expectedHeight * 0.16);
+}
+
+calculateMinScrolled();
+
+function goToTop() {
+  const timeout = setTimeout(() => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    clearTimeout(timeout);
+  }, 10);
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > minScrolled || document.documentElement.scrollTop > minScrolled) {
+    document.getElementById('to-top').classList.add('is-active');
+  } else {
+    document.getElementById('to-top').classList.remove('is-active');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -22,3 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+window.onscroll = scrollFunction;
+window.addEventListener('resize', calculateMinScrolled);
