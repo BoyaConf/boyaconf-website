@@ -702,6 +702,8 @@ p a,
 li a,
 p a:visited,
 li a:visited {
+    --link-gradient-start: #2CC5B6;
+    --link-gradient-end: #4dcc89;
     color: var(--dark-blue);
     background: var(--link-gradient-start);
     background: -moz-linear-gradient(left, var(--link-gradient-start) 0%, var(--link-gradient-end) 100%);
@@ -711,11 +713,14 @@ li a:visited {
     background: -o-linear-gradient(left, var(--link-gradient-start) 0%, var(--link-gradient-end) 100%);
     background: -ms-linear-gradient(left, var(--link-gradient-start) 0%, var(--link-gradient-end) 100%);
     background: linear-gradient(to right, var(--link-gradient-start) 0%, var(--link-gradient-end) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4dcc88', endColorstr='#eb3b5b', GradientType=1);
     background-repeat: no-repeat;
     background-size: 100% .15rem;
     background-position: 0 100%;
-    transition: background-size .15s ease-in;
+    -webkit-transition: all .15s ease-in;
+    -moz-transition: all .15s ease-in;
+    -ms-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
     padding: .15rem;
 }
 
@@ -725,6 +730,8 @@ p a.is-active,
 li a:hover,
 li a:focus,
 li a.is-active {
+    --link-gradient-start: #96e2db;
+    --link-gradient-end: #94e0b8;
     color: var(--dark-blue);
     background-size: 100% 100%;
 }
