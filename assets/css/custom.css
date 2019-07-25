@@ -547,7 +547,19 @@ a.navbar-item:hover {
     display: block;
     margin: auto;
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 96px;
+}
+
+@media screen and (min-width: 1024px) {
+    .avatar {
+        max-width: 120px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #speakers .columns {
+        max-width: 85%;
+    }
 }
 
 .speaker-info .title {
@@ -568,10 +580,8 @@ a.navbar-item:hover {
     margin-top: auto;
 }
 
-@media screen and (max-width: 450px) {
-    .avatar {
-        max-width: 96px;
-    }
+.card-content {
+    padding: 1.65rem;
 }
 
 .columns {
@@ -579,14 +589,15 @@ a.navbar-item:hover {
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
-    .column.is-4-tablet {
+    .column.is-4-tablet,
+    .column.is-6-mobile {
         width: 33.333%;
     }
+}
 
-    .column.is-3-tablet,
-    .column.is-12-mobile,
-    .column.is-6-mobile {
-        width: 25%;
+@media screen and (max-width: 400px) {
+    #speakers .column.is-6-mobile {
+        width: 100%;
     }
 }
 
