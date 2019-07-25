@@ -137,8 +137,15 @@ b {
     vertical-align: middle;
     margin-top: 1.2rem;
     margin-bottom: 3rem;
-    padding-left: .4rem;
-    padding-right: .4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 460px) {
+    .section-title-container {
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
 }
 
 .section-subtitle-container {
@@ -540,7 +547,7 @@ a.navbar-item:hover {
     display: block;
     margin: auto;
     border-radius: 50%;
-    max-width: 144px;
+    max-width: 100%;
 }
 
 .speaker-info .title {
