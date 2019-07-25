@@ -33,6 +33,10 @@ body, html {
     font-size: 1rem;
 }
 
+body {
+    line-height: 1.7;
+}
+
 h1, h2,
 .content h1, .content h2 {
     font-weight: 800;
@@ -140,8 +144,14 @@ b {
 .section-subtitle-container {
     text-align: center;
     vertical-align: middle;
-    margin-top: 4rem;
-    margin-bottom: 2.4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .section-subtitle-container h2 {
+        font-size: 3.2rem;
+    }
 }
 
 .hero:nth-of-type(2n) .section-title-container {
@@ -777,7 +787,7 @@ a:focus {
 }
 
 #our-sponsors .sponsor-section {
-    margin-top: 3.6rem;
+    margin-top: 2.4rem;
 }
 
 #our-sponsors .sponsor-section h3,
