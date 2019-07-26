@@ -210,6 +210,19 @@ b {
     color: #fff;
 }
 
+.navbar-burger span {
+    height: 2px;
+    width: 20px;
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50%);
+}
+
+.navbar-burger:not(.is-active) span:nth-child(3) {
+    top: calc(50% + 6px);
+}
+
 .hero.is-fullheight-with-navbar {
     min-height: calc(100vh - 3.25rem);
 }
