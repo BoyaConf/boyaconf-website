@@ -325,6 +325,10 @@ b {
     color: var(--red) !important;
 }
 
+.red-dark {
+    color: var(--red-dark) !important;
+}
+
 .logo-cont {
     color: #fff;
     -webkit-text-stroke: 1px var(--dark-blue);
@@ -958,6 +962,7 @@ a:focus {
 #subscribe .card-content {
     margin-left: 0rem;
     margin-right: 0rem;
+    margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
 }
@@ -965,15 +970,23 @@ a:focus {
 #subscribe .card-content.has-text-start,
 #subscribe .card-content.has-text-start * {
     text-align: start !important;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#subscribe .card-content.has-form.has-text-start,
+#subscribe .card-content.has-form.has-text-start * {
+    align-items: flex-end;
+    align-content: flex-end;
 }
 
 #subscribe .form {
-    width: 90%;
+    width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     #subscribe .form {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -982,10 +995,16 @@ a:focus {
     margin: 0;
 }
 
+.field.is-grouped > .control:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 1.2rem;
+}
+
 .control.has-icons-left .input ~ .icon,
 .control.has-icons-left .select ~ .icon,
 .control.has-icons-right .input ~ .icon,
 .control.has-icons-right .select ~ .icon {
+    top: .2rem;
     color: rgba(0, 32, 43, 0.12);
 }
 

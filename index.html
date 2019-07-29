@@ -336,31 +336,27 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <div class="section-title-container">
-                        <h1 class="section-title">Suscríbete!</h1>
+                        <h1 class="section-title">Noticias</h1>
                     </div>
                     <div class="columns is-multiline is-mobile is-centered">
-                        <!--
                         <div class="column is-12-mobile is-6-tablet is-6-desktop">
-                            <div class="card has-same-height">
+                            <div class="card">
                                 <div class="card-content has-text-start">
                                     <p>
-                                        Si deseas, puedes unirte al equipo en Twist donde estaremos
-                                        publicando información en diferentes canales, y podrás
-                                        interactuar y comunicarte con otros (posibles)
-                                        asistentes.
+                                        Únete a nuestra lista de correo, o bien al
+                                        <a target="_blank"
+                                           href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33">equipo
+                                                                                                       en
+                                                                                                       Twist</a>
+                                        donde además podrás interactuar y comunicarte con otros
+                                        (posibles) asistentes.
                                     </p>
-                                    <br>
-                                    <a class="button is-link" target="_blank"
-                                       href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33">
-                                        Twist
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                        -->
                         <div class="column is-12-mobile is-6-tablet is-6-desktop">
-                            <div class="card has-same-height">
-                                <div class="card-content has-text-start">
+                            <div class="card">
+                                <div class="card-content has-form has-text-start">
                                     <div class="form" id="sub-form">
                                         <div class="field">
                                             <label class="label" for="fields[name]">
@@ -395,23 +391,30 @@
                                             </div>
                                         </div>
                                         <div class="field is-grouped is-grouped-right">
-                                            <div class="g-recaptcha"
-                                                 data-sitekey="6LcaLbAUAAAAAMPWj0U_ngIpgMDAEmUwhZnqS1My"></div>
-                                        </div>
-                                        <div class="field">
-                                            <p class="help is-success is-hidden" id="sub-ok">
-                                                Todos los campos son obligatorios
+                                            <p class="help green-dark" id="sub-ok">
+                                                Pronto nos comunicaremos
                                             </p>
-                                            <p class="help is-danger is-hidden" id="sub-error">
-                                                Todos los campos son obligatorios
+                                            <p class="help red-dark is-hidden"
+                                               id="sub-fields-error">
+                                                Todos los campos son obligatorios!
+                                            </p>
+                                            <p class="help red-dark is-hidden" id="sub-error">
+                                                Ocurrió un error. Por favor, intenta más tarde.
                                             </p>
                                         </div>
                                         <div class="field is-grouped is-grouped-right">
                                             <div class="control">
+                                                <a class="button is-link has-text-start"
+                                                   target="_blank"
+                                                   href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33">
+                                                    Twist
+                                                </a>
+                                            </div>
+                                            <div class="control">
                                                 <button class="button is-primary"
                                                         type="button" id="sub-btn"
                                                         onclick="return validateForm(event);">
-                                                    Suscribirse
+                                                    Registrarse
                                                 </button>
                                             </div>
                                         </div>
@@ -446,7 +449,5 @@
         </button>
 
         <script src="./assets/js/main.js"></script>
-
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </body>
 </html>

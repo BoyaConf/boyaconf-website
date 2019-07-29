@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showFormError() {
   try {
-    document.getElementById('sub-error').classList.remove('is-hidden');
+    document.getElementById('sub-fields-error').classList.remove('is-hidden');
   } catch (e) {
   }
 }
 
 function clearFormError() {
-  const errorEle = document.getElementById('sub-error');
+  const errorEle = document.getElementById('sub-fields-error');
   errorEle.classList.add('is-hidden');
 }
 
@@ -83,11 +83,6 @@ function validateForm(event) {
     return false;
   }
 
-  const response = grecaptcha.getResponse();
-  if (response.length === 0) {
-    showFormError();
-    return false;
-  }
   clearFormError();
 
   const subBtn = document.getElementById('sub-btn');
@@ -96,20 +91,23 @@ function validateForm(event) {
   subNameField.disabled = true;
   subEmailField.disabled = true;
 
+  const subOk = document.getElementById('sub-ok');
+  subOk.classList.add('is-hidden');
+
+  const subError = document.getElementById('sub-error');
+  subError.classList.add('is-hidden');
+
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://api.mailerlite.com/api/v2/groups/49639168/subscribers', true);
+  xhr.open('POST', 'https://boyaconf-subscriber.netlify.com/api/subscribe', true);
   xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.setRequestHeader('X-MailerLite-ApiKey', 'e19e306ef466923adcdbb080bae8c734');
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
-      subNameField.disabled = false;
-      subEmailField.disabled = false;
-      subBtn.classList.remove('is-loading');
       if (xhr.status === 200) {
-        console.log(xhr.responseText);
+        subOk.classList.remove('is-hidden');
+        subBtn.classList.add('is-hidden');
+        subBtn.classList.remove('is-loading');
       } else {
-        console.error('Error:');
-        console.error(xhr.responseText);
+        subError.classList.remove('is-hidden');
       }
     }
   };
