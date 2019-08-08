@@ -259,7 +259,7 @@ b {
     margin-bottom: .6rem !important;
 }
 
-.mdis {
+.mdis:not(.is-small) {
     margin-top: 2.4rem;
 }
 
@@ -267,25 +267,46 @@ b {
     margin-bottom: 4.2rem;
 }
 
-.mdis a {
+.mdis:not(.is-small) a {
     margin-right: .2rem;
     margin-left: .2rem;
     padding: .1rem;
 }
 
 .mdis a.mdi::before {
-    background-image: url('./../img/boyaconf-rect.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     text-align: center;
-    min-width: 44px;
     width: auto;
     height: auto;
-    padding: .6rem;
     fill: var(--red);
     color: #fff;
     text-decoration: none !important;
+}
+
+.mdis:not(.is-small) a.mdi::before {
+    background-image: url('./../img/boyaconf-rect.svg');
+    min-width: 44px;
+    padding: .6rem;
+}
+
+.mdis.is-small {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+
+.mdis.is-small a {
+    margin-right: .1rem;
+    margin-left: .1rem;
+    padding: .1rem;
+}
+
+.mdis.is-small a.mdi::before {
+    background-image: url('./../img/boyaconf-rect-dark-blue.svg');
+    min-width: 32px;
+    padding: .2rem;
+    fill: var(--dark-blue);
 }
 
 .mdis a:hover.mdi::before,
@@ -960,8 +981,8 @@ a:focus {
 }
 
 #subscribe .card-content {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -1054,4 +1075,35 @@ a:focus {
         transform: scale(0.8) !important;
         -webkit-transform: scale(0.8) !important;
     }
+}
+
+#speakers .card-content p.title {
+    margin-top: 1.4rem;
+}
+
+.speaker-social {
+    margin-top: .2rem;
+    margin-bottom: .4rem;
+}
+
+.speaker-social a:not(:first-of-type).mdi {
+    margin-left: .2rem;
+}
+
+.speaker-social a.mdi {
+    margin-right: .2rem;
+}
+
+.speaker-social a.mdi:before {
+    font-size: 20px !important;
+}
+
+.speaker-social a.mdi,
+.speaker-social a:visited.mdi {
+    color: var(--dark-blue);
+}
+
+.speaker-social a:hover.mdi,
+.speaker-social a:focus.mdi {
+    color: var(--red-dark);
 }
