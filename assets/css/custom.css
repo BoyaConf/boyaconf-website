@@ -8,7 +8,7 @@
     --green-dark: #2e7a52;
     --green-darker: #1f5237;
     --dark-blue: #00202b;
-    --dark-blue-light: #0D2B36;
+    --dark-blue-light: #0d2b36;
     --selection-color: rgba(77, 204, 137, .35);
     --link-gradient-start: #a3f0d6;
     --link-gradient-end: #82dbac;
@@ -697,7 +697,7 @@ h3 a,
 h3 a:visited,
 h4 a,
 h4 a:visited {
-    --link-gradient-start: #2CC5B6;
+    --link-gradient-start: #2cc5b6;
     --link-gradient-end: #4dcc89;
     color: var(--dark-blue);
     background: var(--link-gradient-start);
