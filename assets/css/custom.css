@@ -493,11 +493,34 @@ a.navbar-item:hover {
 }
 
 .button.is-primary.is-hovered,
-.button.is-primary:hover {
+.button.is-primary.is-active,
+.button.is-primary:hover,
+.button.is-primary:focus,
+.button.is-primary:active {
     background-color: var(--green-dark) !important;
     --shadow-col-a: rgba(26, 153, 86, .4);
     --shadow-col-b: rgba(26, 153, 86, .28);
     --shadow-col-c: rgba(26, 153, 86, .24);
+}
+
+.button.is-primary.is-light {
+    color: var(--dark-blue);
+    background-color: var(--green) !important;
+    --shadow-col-a: rgba(77, 204, 137, .4);
+    --shadow-col-b: rgba(77, 204, 137, .28);
+    --shadow-col-c: rgba(77, 204, 137, .24);
+}
+
+.button.is-primary.is-light.is-hovered,
+.button.is-primary.is-light.is-active,
+.button.is-primary.is-light:hover,
+.button.is-primary.is-light:focus,
+.button.is-primary.is-light:active {
+    color: var(--dark-blue);
+    background-color: var(--green-mid) !important;
+    --shadow-col-a: rgba(32, 191, 107, .4);
+    --shadow-col-b: rgba(32, 191, 107, .28);
+    --shadow-col-c: rgba(32, 191, 107, .24);
 }
 
 .card {
