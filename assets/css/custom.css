@@ -255,8 +255,18 @@ b {
     margin-bottom: 1.6rem;
 }
 
-#desc *:first-child {
+#desc *:not(.button):first-child {
     margin-bottom: .6rem !important;
+}
+
+#desc .buttons.is-centered:not(.has-addons) {
+    margin-top: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+#desc .buttons.is-centered:not(.has-addons) .button:not(.is-fullwidth) {
+    margin-left: .8rem;
+    margin-right: .8rem;
 }
 
 .mdis:not(.is-small) {
