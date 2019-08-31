@@ -871,8 +871,8 @@ a:focus {
 
 .card,
 .card.is-active,
-.card:hover,
-.card:focus {
+#sponsors .card:hover,
+#sponsors .card:focus {
     color: var(--dark-blue);
     background-color: transparent;
     -webkit-box-shadow: none;
@@ -1139,4 +1139,45 @@ a:focus {
 .speaker-social a:hover.mdi,
 .speaker-social a:focus.mdi {
     color: var(--red-dark);
+}
+
+.modal-background {
+    background-color: rgba(0, 32, 43, .9);
+}
+
+.modal .modal-content .box {
+    border-radius: 8px;
+    padding: 1.6rem;
+}
+
+.modal .modal-content .box .media-left {
+    margin-right: 1.8rem;
+}
+.modal-content {
+    width: 100%;
+}
+
+@media print, screen and (max-width: 400px) {
+    .modal-content {
+        max-width: 100vw;
+    }
+}
+
+@media print, screen and (max-width: 769px) {
+    .modal-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .modal-content {
+        margin: 0;
+    }
+}
+
+@media print, screen and (min-width: 769px) {
+    .modal-content {
+        width: auto;
+        min-width: 40vw;
+        max-width: 70vw;
+    }
 }

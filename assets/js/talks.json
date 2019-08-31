@@ -1,0 +1,19 @@
+{
+  "talks": {
+    "en": {
+    },
+    "es": {
+      "fabio": {
+        "description": "Desde que Facebook decidió propulsar la realidad virtual con la adquisición de Oculus, sus esfuerzos se volcaron al desarrollo del framework React VR. Al mismo tiempo, la comunidad de desarrolladores aunó esfuerzos que mejoraron las características y posibilidades que dicha librería permitía para la construcción de experiencias de realidad virtual. Sin embargo, el camino que esto tomó en el último año, hizo que el objetivo inicial para el que esta herramienta fue pensado se alejara de la versión que utilizaban internamente en Facebook para sus desarrollos nativos. Así pues, para evitar confusiones, el framework open source fue renombrado como React 360, que refleja mejor el objeto del mismo, que es la creación de experiencias 360 inmersivas para PC, movil y headsets VR. En esta nueva versión, se simplificaron algunos procesos, se agregaron novedosos elementos de UI en 2D y se optimizó el rendimiento para esos casos de uso. Adicionalmente, se introdujeron algunos conceptos como Runtime, Executors y Surfaces.\n\nEn esta charla, exploraremos estos nuevos conceptos introducidos en la librería y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
+        "info": "Creative developer, Teacher at Skillshare and speaker (Bogodev, Makers Colombia). Right now I'm mostly working with VR (A-Frame, React 360), Processing and Generative Art.",
+        "speaker": "Fabio Cortes",
+        "social": {
+          "web": "https://www.fjcr.pro/",
+          "twitter": "https://twitter.com/fabiojcortes",
+          "linkedin": "https://www.linkedin.com/in/fabiojcortes/",
+          "github": ""
+        }
+      }
+    }
+  }
+}
