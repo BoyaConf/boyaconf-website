@@ -1,8 +1,14 @@
 let talks = null;
+let isEnglish = false;
+try {
+  isEnglish = window.location.href.toString().toLowerCase().includes('/en/');
+} catch (e) {
+  isEnglish = false;
+}
 
 function loadTalks() {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', './assets/js/talks.json', true);
+  xhr.open('GET', `${isEnglish ? './..' : '.'}/assets/js/talks.json`, true);
   xhr.onreadystatechange = () => {
     if (xhr.status === 200 && xhr.readyState === 4) {
       try {
@@ -17,11 +23,11 @@ function loadTalks() {
   xhr.send(null);
 };
 
-function setTalkData(talk, isEnglish = false) {
+function setTalkData(talk) {
   console.log(talk);
   const speakerName = document.getElementById('speaker-name');
   if (speakerName) speakerName.innerText = talk ? talk.speaker || '' : '';
-  const photo = `${isEnglish ? './../' : './'}assets/img/speakers/${(talk.speaker
+  const photo = `${isEnglish ? './..' : '.'}/assets/img/speakers/${(talk.speaker
     || '').toLowerCase().replace(/\s+/g, '-')}.png`;
   const speakerPhoto = document.getElementById('speaker-photo');
   if (speakerPhoto) {
@@ -68,9 +74,8 @@ function openSpeakerModal(who) {
   } catch (e) {
   }
   try {
-    const isEnglish = window.location.href.toString().toLowerCase().includes('/en/');
     const items = isEnglish ? talks.en : talks.es;
-    setTalkData(items[who] || talks.es[who], isEnglish);
+    setTalkData(items[who] || talks.es[who]);
     const modal = document.getElementById('speaker-modal');
     if (modal) modal.classList.add('is-active');
   } catch (e) {
