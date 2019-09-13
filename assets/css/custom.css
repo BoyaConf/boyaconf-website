@@ -1183,11 +1183,11 @@ a:focus {
 }
 
 .speaker-social a:not(:first-of-type).mdi {
-    margin-left: .2rem;
+    margin-left: .4rem;
 }
 
 .speaker-social a.mdi {
-    margin-right: .2rem;
+    margin-right: .4rem;
 }
 
 .speaker-social a.mdi:before {

@@ -34,6 +34,20 @@ function setTalkData(talk, isEnglish = false) {
   if (talkTitle) talkTitle.innerText = talk ? talk.title || '' : '';
   const talkDescription = document.getElementById('talk-description');
   if (talkDescription) talkDescription.innerText = talk ? talk.description || '' : '';
+  const socialLinks = talk ? talk.social || {} : {};
+  const speakerLinks = document.getElementById('speaker-links');
+  if (speakerLinks) {
+    speakerLinks.innerHTML = '';
+    for (const key of Object.keys(socialLinks)) {
+      console.log(key);
+      const link = document.createElement('a');
+      link.classList.add('mdi');
+      link.classList.add(`mdi-${key.toLowerCase()}`);
+      link.target = '_blank';
+      link.href = socialLinks[key];
+      speakerLinks.appendChild(link);
+    }
+  }
 }
 
 function closeSpeakerModal() {
@@ -56,7 +70,7 @@ function openSpeakerModal(who) {
   try {
     const isEnglish = window.location.href.toString().toLowerCase().includes('/en/');
     const items = isEnglish ? talks.en : talks.es;
-    setTalkData(items[who], isEnglish);
+    setTalkData(items[who] || talks.es[who], isEnglish);
     const modal = document.getElementById('speaker-modal');
     if (modal) modal.classList.add('is-active');
   } catch (e) {
