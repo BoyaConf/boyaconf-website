@@ -70,14 +70,17 @@ function openSpeakerModal(who) {
   if (typeof talks === 'undefined' || talks === null || Object.keys(talks).length <= 0) return;
   if (typeof who === 'undefined' || who === null || who.length <= 0) return;
   try {
-    document.documentElement.classList.add('is-clipped');
-  } catch (e) {
-  }
-  try {
     const items = isEnglish ? talks.en : talks.es;
-    setTalkData(items[who] || talks.es[who]);
-    const modal = document.getElementById('speaker-modal');
-    if (modal) modal.classList.add('is-active');
+    const rightTalk = items[who] || talks.es[who];
+    if (typeof rightTalk !== 'undefined' && rightTalk !== null) {
+      try {
+        document.documentElement.classList.add('is-clipped');
+      } catch (e) {
+      }
+      setTalkData(rightTalk);
+      const modal = document.getElementById('speaker-modal');
+      if (modal) modal.classList.add('is-active');
+    }
   } catch (e) {
   }
 }
