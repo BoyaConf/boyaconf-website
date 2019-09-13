@@ -3,15 +3,105 @@
     "en": {
     },
     "es": {
-      "test": {
+      "milena": {
+        "title": "Domain Driven design applied to Frontend applications",
+        "description": "\nFrontend used to be a monolith focused on the business line features. When it grows, the problems of scalability, performance, and coupling begin. The practical approach of DDD helps us to separated responsibilities according to business domains and have a ubiquitous language between business and engineering teams.",
+        "info": "Milena Suarez is Senior Frontend Engineer at Addi. She really likes work in startups and sharing knowledge in tech events. She is a co-organizer of BogotaJS, Angular Colombia and JSConf Colombia, when not coding, she enjoys traveling, reading and drinking wine.",
+        "speaker": "Milena Suarez",
+        "social": {
+          "twitter": "https://twitter.com/milena_suarezl",
+          "linkedin": "https://www.linkedin.com/in/milenasuarezl/"
+        }
+      },
+      "fabio": {
         "title": "Experiencias inmersivas en la web con React 360",
-        "description": "\nDesde que Facebook decidió propulsar la realidad virtual con la adquisición de Oculus, sus esfuerzos se volcaron al desarrollo del framework React VR. Al mismo tiempo, la comunidad de desarrolladores aunó esfuerzos que mejoraron las características y posibilidades que dicha librería permitía para la construcción de experiencias de realidad virtual. Sin embargo, el camino que esto tomó en el último año, hizo que el objetivo inicial para el que esta herramienta fue pensado se alejara de la versión que utilizaban internamente en Facebook para sus desarrollos nativos.\n\nAsí pues, para evitar confusiones, el framework open source fue renombrado como React 360, que refleja mejor el objeto del mismo, que es la creación de experiencias 360 inmersivas para PC, movil y headsets VR. En esta nueva versión, se simplificaron algunos procesos, se agregaron novedosos elementos de UI en 2D y se optimizó el rendimiento para esos casos de uso. Adicionalmente, se introdujeron algunos conceptos como Runtime, Executors y Surfaces.\n\nEn esta charla, exploraremos estos nuevos conceptos introducidos en la librería y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
+        "description": "\nDesde que Facebook decidió propulsar la realidad virtual con la adquisición de Oculus, sus esfuerzos se volcaron al desarrollo del framework React VR. Al mismo tiempo, la comunidad de desarrolladores aunó esfuerzos que mejoraron las características y posibilidades que dicha librería permitía para la construcción de experiencias de realidad virtual. Sin embargo, el camino que esto tomó en el último año, hizo que el objetivo inicial para el que esta herramienta fue pensado se alejara de la versión que utilizaban internamente en Facebook para sus desarrollos nativos.\n\nEn esta charla, exploraremos estos nuevos conceptos introducidos en la librería y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
         "info": "Creative developer, Teacher at Skillshare and speaker (Bogodev, Makers Colombia). Right now I'm mostly working with VR (A-Frame, React 360), Processing and Generative Art.",
         "speaker": "Fabio Cortes",
         "social": {
           "web": "https://www.fjcr.pro/",
           "twitter": "https://twitter.com/fabiojcortes",
           "linkedin": "https://www.linkedin.com/in/fabiojcortes/"
+        }
+      },
+      "cristian": {
+        "title": "Programación Funcional para no-batos",
+        "description": "\nLa programación funcional la vivimos día a día, ahora que tal si la combinamos con estrategias para aprovecharla de una manera mas inteligente. En esta charla veremos el uso de tipos, funciones y estructuras que nos permitirán elaborar un caso de uso completo, todo usando Kotlin!",
+        "info": "Cristian is a Software Developer, currently focused on the Android Platform creating apps and SDKs. He is very active in the Android Community and serves as a Co-Organizer of the Medellin Android Meetup, a group of professional Android developers in Colombia.",
+        "speaker": "Cristian Gomez",
+        "social": {
+          "twitter": "http://twitter.com/iyubinest",
+          "linkedin": "https://www.linkedin.com/in/iyubinest/"
+        }
+      },
+      "yury": {
+        "title": "Ingeniería del Caos: Probando Hipótesis en Producción",
+        "description": "\nLa mayoría de nuestras actividades dependen de sistemas distribuídos que son complejos, cambiantes y dinámicos. A medida que esos sistemas crecen, la probabilidad de falla se hace más difícil de predecir y mitigar. La Ingeniería del Caos introduce una disciplina basada en el método científico, que mediante la inyección controlada de errores, busca probar hipótesis sobre el comportamiento de los sistemas en un escenario de falla y generar estrategias de resiliencia que permitan construir confiabilidad.\n\nLa charla empieza con una definición de lo que es Ingeniería del Caos, sus principios y fases, continúa con una explicación de la metodología para correr experimentos en producción, con un análisis del impacto en diferentes áreas.",
+        "info": "I am Systems Engineer and I have a degree in MSc in Systems Engineering and Computer Science from the Universidad Nacional de Colombia. I am interested in developing web applications using open source technologies and agile methodologies",
+        "speaker": "Yury Niño",
+        "social": {
+          "web": "https://medium.com/@yury.nino.roa",
+          "twitter": "https://twitter.com/yurynino",
+          "linkedin": "https://www.linkedin.com/in/yurynino/"
+        }
+      },
+      "mbolivar": {
+        "title": "It takes some engineering to serve 41679 users",
+        "description": "\nStarting in a new position, in a new job is always a rollercoaster of emotions \uD83C\uDFA2 a thrill of goodwill and a lot of thinking on “please don’t screw this” \uD83E\uDD26\u200D♂️ any job! And most of the times we could enter a startup or a new project, but these projects could be already started, they can have an already built architecture \uD83C\uDFD7 they made some decisions along the way and as engineers we should care about that, to know where and why we’re heading that way, we should care about history \uD83E\uDD13 This is a story on how the company where I work now used Python to handle its architecture and engineers to give service 41679 clients \uD83D\uDD25 some story on when to split apps, which framework we choose and why \uD83E\uDD14 and some cover on important engineering topics like microservices, queueing, blocking operations and testing, oh yes, we have testing \uD83E\uDDD0 Come and check out how to scale, or at least not die trying \uD83D\uDE80",
+        "info": "Informatics Engineer, working on my thesis right now, implementing a sentiment analysis app focusing all the work towards the transformation of a traditional city into a smart city through smart public services. I work as a Full Stack Developer for @apploi \uD83D\uDE80 Also I'm a maintainer for the Spanish docs of @reactjs \uD83E\uDD13",
+        "speaker": "Miguel Bolivar",
+        "social": {
+          "twitter": "https://twitter.com/Darking360",
+          "linkedin": "https://www.linkedin.com/in/darking360/"
+        }
+      },
+      "nathaly": {
+        "title": "Microservicios, ¿pesadilla o bendición?",
+        "description": "\nÚltimamente se habla mucho sobre el poder de los microservicios.\n\nDejame contarte sobre mi experiencia usando microservicios y darte un par de tips que te permitan tomar el camino de la luz, de esa forma podrás ahorrarte unos cuantos dolores de cabeza.",
+        "info": "Desarrolladora de software hace 4 años. Trabajo como CTO de ZonaWiki y apoyo como lider de desarrollo en proyectos de IOT. Mi fuerte es Ruby, pero he trabajado con javascript de la mano desde mis inicios. Actualmente lidero la comunidad de Ruby Bogotá y apoyo la organización de Bogotá JS y JS Conf Colombia.",
+        "speaker": "Nathaly Villamor",
+        "social": {
+          "twitter": "https://twitter.com/nathalyvillamor",
+          "linkedin": "https://www.linkedin.com/in/nathaly-villamor-983b5570/"
+        }
+      },
+      "jesus": {
+        "title": "Movie Genre Classification Using Deep Multimodal Neural Networks",
+        "description": "\nLa clasificación de las películas según su género es de principal interés para diversos sectores multimedia (Netflix, Youtube, etc.), para esta clasificación es posible analizar dos tipos de datos: Las imágenes de los posters y el texto de la sinopsis. En la actualidad, ambos tipos de datos son fácilmente entendibles para un ser humano, pero para una maquina es un reto analizarlos y correlacionarlos. Adicionalmente, el problema de la clasificación de genero de las películas es un reto en el área de Machine Learning porque es un problema multi-clase y al mismo tiempo multi-genero, es decir, una misma película puede pertenecer a varios géneros en simultánea.\n\nEn la presente charla se explicará cómo hacer uso del deep learning para automatizar la clasificación de las películas gracias a la interpretación del texto y las imágenes. En detalle, se explicarán el funcionamiento y el uso de las redes neuronales convolucionales y el transfer learning para el procesamiento de las imágenes en los posters. Y, por otro lado, se explicarán las redes neuronales recurrentes en combinación con métodos no supervisados (Word2Vec) para el pre-procesamiento y entrenamiento de los algoritmos de clasificación de la sinopsis.\n\nFinalmente, se hablará de cómo agregar la información de ambos tipos de datos - imágenes y texto- en una red neuronal multi modal para encontrar los géneros a los que pertenece una película.",
+        "info": "Su pasión es analizar y resolver problemas de la vida real utilizando algoritmos de machine learning. Jesús es Físico e Ingeniero Industrial de la Universidad de los Andes, Colombia. Sus proyectos de investigación han estado enfocados en la aplicación del Deep Learning a problemas financieros, procesamiento de imágenes, ciberseguridad y física de altas energías. Jesus es un estusiasta de la universalidad del conocimiento y ha sido ponente en conferencias a nivel nacional e internacional. Asimismo, tiene interés por proyectos relacionados con computer vision, data mining y econophysics. Entre otras, le encanta la actuación y practicar tenis de mesa.",
+        "speaker": "Jesús Solano",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/jesus-solano-go"
+        }
+      },
+      "zulema": {
+        "title": "Seguimiento y rastreo de vehículos distribuidores en tiempo real usando Ionic y Google Maps",
+        "description": "\nLa logística de una empresa es un área bastante amplia entre ellas una de las más importantes es la distribución de sus productos. En este caso la tendencia de poder controlar la distribución de insumos o productos es uno de los ejemplos más relevantes, ya que el costo de distribución influye el 15% del costo unitario de un producto. Es ahí donde nace la necesidad de mejorar este proceso garantizando al cliente un producto de calidad con un precio justo. El objetivo de la charla es dar a conocer cómo Ionic y Google Maps nos ayuda a realizar un seguimiento y rastreo de vehículos distribuidores para controlar y tener el seguimiento de las rutas de los mismos y las ventajas que trae implementar este software en el proceso.",
+        "info": "Ingeniera Industrial y de Sistemas, boliviana, trabajó dentro del equipo de sistemas en la Empresa Comteco LTDA (Cooperativa Mixta de Telecomunicaciones Cochabamba Limitada). Pil Andina S. A. (Planta Industrializadora de Leche).",
+        "speaker": "Zulema Vicente",
+        "social": {
+          "twitter": "https://twitter.com/vpzulema",
+          "linkedin": "https://www.linkedin.com/in/zulema-vicente-46b682135/"
+        }
+      },
+      "museche": {
+        "title": "Take your non-JS app to the web with WebAssembly",
+        "description": "\nWebAssembly lets you port your current code to the web. You can compile code written in C, Go or Rust into WASM as target, so you can reuse your current apps or call part of the code from a JavaScript context and access browser functionalities using the same Web APIs accessible from JavaScript.\n\nThis talk will be an introduction of what's possible to do with WASM. I will discuss the following topics:\n\n* Small brief about Javascript performance\n* Introduction of scenarios where high performance could be required.\n* What is WASM, its components and features.\n* How can you take your existing code to WASM.\n* Code interaction between JS and WASM (and vice-versa)\n* Code examples and a brief presentation of demos (video or live).\n* Demo of PHP code running in the browser with WASM\n* Firefox's Dev Tools for working with WASM.\n* Where you can get more information about it.\n\nAttendees will learn the basics of this game-changer web technology, how to start to create high performance apps from scratch or migrate existing ones written in other languages like C/C++ or Rust to WebAssembly.",
+        "info": "Miguel is a Mozilla TechSpeaker who loves to evangelize about the latest and newest open web technologies to make a better web. He's being doing web developing since the past millenium and has been volunteering in many open source communities as coder, translator, writing about web technologies in his blog and as speaker at events. Currently works as a Operating Systems and Programming professor at Universidad del Táchira, Venezuela. From there, he tries to promote open technologies among students and local professionals by organizing tech events or the local meetups.",
+        "speaker": "Miguel Useche",
+        "social": {
+          "web": "https://skatox.com/",
+          "twitter": "https://twitter.com/skatox",
+          "linkedin": "https://www.linkedin.com/in/skatox/"
+        }
+      },
+      "adrian": {
+        "title": "Computational Complexity and JavaScript",
+        "description": "\nTBD",
+        "info": "Lead / Sr. Solutions Engineer en NodeSource y organizador de las comunidades MedellinJS, JSConfCO y NodeConfCO",
+        "speaker": "Adrián Estrada",
+        "social": {
+          "twitter": "https://twitter.com/edsadr"
         }
       }
     }
