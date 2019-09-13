@@ -59,13 +59,19 @@ h3,
 }
 
 h4,
-.content h4 {
+.content h4,
+#our-sponsors #silver h3,
+#our-sponsors #silver .content h3 {
     font-size: 1.7rem;
     font-weight: 700;
 }
 
 h5,
-.content h5 {
+.content h5,
+#our-sponsors #community h3,
+#our-sponsors #community .content h3,
+#our-sponsors #partners h3,
+#our-sponsors #partners .content h3 {
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -838,13 +844,23 @@ a:focus {
     justify-content: center;
 }
 
-#our-sponsors .sponsor-section {
-    margin-top: 2.4rem;
+#our-sponsors .section-subtitle-container {
+    margin-bottom: 0;
 }
 
-#our-sponsors .sponsor-section h3,
-#our-sponsors .sponsor-section h4 {
-    margin-bottom: 1.6rem;
+#our-sponsors .sponsor-section {
+    margin-top: 3.2rem;
+}
+
+#our-sponsors .sponsor-section:not(#community) h3,
+#our-sponsors .sponsor-section:not(#community) h4 {
+    margin-bottom: .6rem;
+    cursor: auto !important;
+}
+
+#our-sponsors .sponsor-section#community h3,
+#our-sponsors .sponsor-section#community h4 {
+    margin-bottom: -0.8rem;
     cursor: auto !important;
 }
 
@@ -906,20 +922,32 @@ a:focus {
 }
 
 #our-sponsors #gold .card .card-content img {
-    max-height: 192px;
+    max-height: 204px;
 }
 
 #our-sponsors #silver .card .card-content img {
-    max-height: 168px;
+    max-height: 180px;
 }
 
 #our-sponsors #community .card .card-content img {
-    max-height: 144px;
+    max-height: 128px;
+}
+
+#our-sponsors #partners .card .card-content {
+    padding: .8rem;
+}
+
+#our-sponsors #partners .card .card-content img {
+    max-height: 118px;
 }
 
 @media screen and (max-width: 820px) {
     #our-sponsors #community .card .card-content img {
-        max-height: 108px;
+        max-height: 100px;
+    }
+
+    #our-sponsors #partners .card .card-content img {
+        max-height: 92px;
     }
 }
 
@@ -1153,6 +1181,7 @@ a:focus {
 .modal .modal-content .box .media-left {
     margin-right: 1.8rem;
 }
+
 .modal-content {
     width: 100%;
 }
