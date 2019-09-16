@@ -6,7 +6,7 @@
         "description": "\nThe talk begins with an introduction to human factors, ergonomy and the design of safety systems. It continues with the definition of Chaos Engineering, its principles and phases, an explanation of the methodology for running experiments in production and an analysis of the impact in different areas.",
         "info": "Software Engineer with 9+ years of experience designing, implementing and managing the development of software applications using agile methodologies such as scrum and kanban.",
         "speaker": "Yury Niño Roa",
-        "photo": "yury_nino",
+        "photo": "yury-nino",
         "social": {
           "web": "https://medium.com/@yury.nino.roa",
           "twitter": "https://twitter.com/yurynino",
@@ -18,7 +18,7 @@
         "description": "\nIn early 2017, Facebook and Oculus released a library called React VR which was designed for the creation of 3D and VR experiences in the web browser. But in 2018, was renamed as React 360, which better reflects its use case: the creation of immersive 360 experiences. In this talk, we are going to explore the new concepts behind this new approach and how can we create experiences that can be consumed across PC, Mobile, and VR devices.",
         "info": "UI engineer at Jobsity and teacher at Skillshare. In love with VR and Generative Art.",
         "speaker": "Fabio Cortés",
-        "photo": "fabio_cortes",
+        "photo": "fabio-cortes",
         "social": {
           "web": "https://www.fjcr.pro/",
           "twitter": "https://twitter.com/fabiojcortes",
@@ -30,7 +30,7 @@
         "description": "\nWebAssembly is a new type of code that can be executed in modern web browsers through a compact binary format that runs at near-native speed without any plugins. This have a great impact for the web, because it gives a new way to run code from other languages into the web at near native performance, providing client apps with a technology to run high performance applications in such way that was not possible before.\n\nLearn the basics of this game-changer web technology, how to start to create high performance apps from scratch or migrate existing ones to WebAssembly.",
         "info": "Miguel is a professor and web developer. Volunteering with Mozilla since 2010 and now he's a Mozilla TechSpeaker where evangelizes about open web technologies to make a better web",
         "speaker": "Miguel Ángel Useche",
-        "photo": "miguel_useche",
+        "photo": "miguel-useche",
         "social": {
           "web": "https://skatox.com/",
           "twitter": "https://twitter.com/skatox",
@@ -53,7 +53,8 @@
         "title": "Experiencias inmersivas en la web con React 360",
         "description": "\nA comienzos del 2017, Oculus y Facebook publicaron una libreraría llamada React VR, diseñada para la creación de experiencias 3D y de realidad virtual en la web. Sin embargo, en el 2018, decidieron cambiar el enfoque de este proyecto open source y renombrarlo como React 360.  En esta nueva versión, se agregaron novedosos elementos de UI en 2D y se introdujeron nuevos conceptos como Runtime, Executors y Surfaces. En esta charla, exploraremos estos nuevos conceptos y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
         "info": "Ingeniero de UI en Jobsity y profesor en Skillshare. Apasionado por el arte generativo y las experiencias de realidad virtual.",
-        "speaker": "Fabio Cortes",
+        "speaker": "Fabio Cortés",
+        "photo": "fabio-cortes",
         "social": {
           "web": "https://www.fjcr.pro/",
           "twitter": "https://twitter.com/fabiojcortes",
@@ -75,7 +76,7 @@
         "description": "\nLa charla empieza con una introducción a los factores humanos, la ergonomía y el diseño de sistemas seguros. Continúa con la definición de Ingeniería del Caos, sus principios y fases, una explicación de la metodología para correr experimentos en producción y un análisis del impacto en diferentes áreas.",
         "info": "Ingeniera DevOps con 9+ años de experiencia diseñando, implementando y administrando el desarrollo de aplicaciones de software usando metodologías ágiles.",
         "speaker": "Yury Niño Roa",
-        "photo": "yury_nino",
+        "photo": "yury-nino",
         "social": {
           "web": "https://medium.com/@yury.nino.roa",
           "twitter": "https://twitter.com/yurynino",
@@ -123,10 +124,10 @@
       },
       "museche": {
         "title": "Crea aplicaciones de alto rendimiento con WebAssembly",
-        "description": "\nWebAssembly es un nuevo tipo de código que puede ser ejecutado por los navegadores actuales, a través de un binario que se ejecuta a velocidad casi nativas sin la necesidad de usar plugins. Esto trae un nuevo impacto a la web porque da una nueva forma de correr código de otros lenguajes a la web a velocidades casi nativas. Permitiendo contar con aplicaciones de alto rendimiento en el lado del navegador con tecnologías que no eran posibles anteriormente.\n\nAprende lo básico de esta tecnología, descubre como crear aplicaciones de alto rendimiento desde 0 o como migrar existentes a WebAssembly.",
+        "description": "\nWebAssembly es un nuevo tipo de código que puede ser ejecutado por los navegadores actuales, a través de un binario que se ejecuta a velocidad casi nativas sin la necesidad de usar plugins. Esto trae un nuevo impacto a la web porque da una nueva forma de correr código de otros lenguajes a la web a velocidades casi nativas. Permitiendo contar con aplicaciones de alto rendimiento en el lado del navegador con tecnologías que no eran posibles anteriormente.\n\nAprende lo básico de esta tecnología, descubre cómo crear aplicaciones de alto rendimiento desde 0 o cómo migrar existentes a WebAssembly.",
         "info": "Profesor universitario, desarrollador web. Voluntario de Mozilla desde el 2010 y ahora es Mozilla Tech Speaker para evangelizar sobre las últimas  tecnologías web abiertas y construir una mejor web.",
         "speaker": "Miguel Ángel Useche",
-        "photo": "miguel_useche",
+        "photo": "miguel-useche",
         "social": {
           "web": "https://skatox.com/",
           "twitter": "https://twitter.com/skatox",
