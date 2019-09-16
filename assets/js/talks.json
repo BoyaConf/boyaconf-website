@@ -1,6 +1,42 @@
 {
   "talks": {
     "en": {
+      "yury": {
+        "title": "Chaos Engineering: Validating Hypothesis on Production",
+        "description": "\nThe talk begins with an introduction to human factors, ergonomy and the design of safety systems. It continues with the definition of Chaos Engineering, its principles and phases, an explanation of the methodology for running experiments in production and an analysis of the impact in different areas.",
+        "info": "Software Engineer with 9+ years of experience designing, implementing and managing the development of software applications using agile methodologies such as scrum and kanban.",
+        "speaker": "Yury Niño Roa",
+        "photo": "yury_nino",
+        "social": {
+          "web": "https://medium.com/@yury.nino.roa",
+          "twitter": "https://twitter.com/yurynino",
+          "linkedin": "https://www.linkedin.com/in/yurynino/"
+        }
+      },
+      "fabio": {
+        "title": "Immersive web experiences with React 360",
+        "description": "\nIn early 2017, Facebook and Oculus released a library called React VR which was designed for the creation of 3D and VR experiences in the web browser. But in 2018, was renamed as React 360, which better reflects its use case: the creation of immersive 360 experiences. In this talk, we are going to explore the new concepts behind this new approach and how can we create experiences that can be consumed across PC, Mobile, and VR devices.",
+        "info": "UI engineer at Jobsity and teacher at Skillshare. In love with VR and Generative Art.",
+        "speaker": "Fabio Cortés",
+        "photo": "fabio_cortes",
+        "social": {
+          "web": "https://www.fjcr.pro/",
+          "twitter": "https://twitter.com/fabiojcortes",
+          "linkedin": "https://www.linkedin.com/in/fabiojcortes/"
+        }
+      },
+      "museche": {
+        "title": "Take your high performance app to the web with WebAssembly",
+        "description": "\nWebAssembly is a new type of code that can be executed in modern web browsers through a compact binary format that runs at near-native speed without any plugins. This have a great impact for the web, because it gives a new way to run code from other languages into the web at near native performance, providing client apps with a technology to run high performance applications in such way that was not possible before.\n\nLearn the basics of this game-changer web technology, how to start to create high performance apps from scratch or migrate existing ones to WebAssembly.",
+        "info": "Miguel is a professor and web developer. Volunteering with Mozilla since 2010 and now he's a Mozilla TechSpeaker where evangelizes about open web technologies to make a better web",
+        "speaker": "Miguel Ángel Useche",
+        "photo": "miguel_useche",
+        "social": {
+          "web": "https://skatox.com/",
+          "twitter": "https://twitter.com/skatox",
+          "linkedin": "https://www.linkedin.com/in/skatox/"
+        }
+      }
     },
     "es": {
       "milena": {
@@ -15,8 +51,8 @@
       },
       "fabio": {
         "title": "Experiencias inmersivas en la web con React 360",
-        "description": "\nDesde que Facebook decidió propulsar la realidad virtual con la adquisición de Oculus, sus esfuerzos se volcaron al desarrollo del framework React VR. Al mismo tiempo, la comunidad de desarrolladores aunó esfuerzos que mejoraron las características y posibilidades que dicha librería permitía para la construcción de experiencias de realidad virtual. Sin embargo, el camino que esto tomó en el último año, hizo que el objetivo inicial para el que esta herramienta fue pensado se alejara de la versión que utilizaban internamente en Facebook para sus desarrollos nativos.\n\nEn esta charla, exploraremos estos nuevos conceptos introducidos en la librería y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
-        "info": "Creative developer, Teacher at Skillshare and speaker (Bogodev, Makers Colombia). Right now I'm mostly working with VR (A-Frame, React 360), Processing and Generative Art.",
+        "description": "\nA comienzos del 2017, Oculus y Facebook publicaron una libreraría llamada React VR, diseñada para la creación de experiencias 3D y de realidad virtual en la web. Sin embargo, en el 2018, decidieron cambiar el enfoque de este proyecto open source y renombrarlo como React 360.  En esta nueva versión, se agregaron novedosos elementos de UI en 2D y se introdujeron nuevos conceptos como Runtime, Executors y Surfaces. En esta charla, exploraremos estos nuevos conceptos y cómo, gracias a este nuevo enfoque, podemos crear experiencias inmersivas en la web con React 360.",
+        "info": "Ingeniero de UI en Jobsity y profesor en Skillshare. Apasionado por el arte generativo y las experiencias de realidad virtual.",
         "speaker": "Fabio Cortes",
         "social": {
           "web": "https://www.fjcr.pro/",
@@ -36,9 +72,10 @@
       },
       "yury": {
         "title": "Ingeniería del Caos: Probando Hipótesis en Producción",
-        "description": "\nLa mayoría de nuestras actividades dependen de sistemas distribuídos que son complejos, cambiantes y dinámicos. A medida que esos sistemas crecen, la probabilidad de falla se hace más difícil de predecir y mitigar. La Ingeniería del Caos introduce una disciplina basada en el método científico, que mediante la inyección controlada de errores, busca probar hipótesis sobre el comportamiento de los sistemas en un escenario de falla y generar estrategias de resiliencia que permitan construir confiabilidad.\n\nLa charla empieza con una definición de lo que es Ingeniería del Caos, sus principios y fases, continúa con una explicación de la metodología para correr experimentos en producción, con un análisis del impacto en diferentes áreas.",
-        "info": "I am Systems Engineer and I have a degree in MSc in Systems Engineering and Computer Science from the Universidad Nacional de Colombia. I am interested in developing web applications using open source technologies and agile methodologies",
-        "speaker": "Yury Niño",
+        "description": "\nLa charla empieza con una introducción a los factores humanos, la ergonomía y el diseño de sistemas seguros. Continúa con la definición de Ingeniería del Caos, sus principios y fases, una explicación de la metodología para correr experimentos en producción y un análisis del impacto en diferentes áreas.",
+        "info": "Ingeniera DevOps con 9+ años de experiencia diseñando, implementando y administrando el desarrollo de aplicaciones de software usando metodologías ágiles.",
+        "speaker": "Yury Niño Roa",
+        "photo": "yury_nino",
         "social": {
           "web": "https://medium.com/@yury.nino.roa",
           "twitter": "https://twitter.com/yurynino",
@@ -85,10 +122,11 @@
         }
       },
       "museche": {
-        "title": "Take your non-JS app to the web with WebAssembly",
-        "description": "\nWebAssembly lets you port your current code to the web. You can compile code written in C, Go or Rust into WASM as target, so you can reuse your current apps or call part of the code from a JavaScript context and access browser functionalities using the same Web APIs accessible from JavaScript.\n\nThis talk will be an introduction of what's possible to do with WASM. I will discuss the following topics:\n\n* Small brief about Javascript performance\n* Introduction of scenarios where high performance could be required.\n* What is WASM, its components and features.\n* How can you take your existing code to WASM.\n* Code interaction between JS and WASM (and vice-versa)\n* Code examples and a brief presentation of demos (video or live).\n* Demo of PHP code running in the browser with WASM\n* Firefox's Dev Tools for working with WASM.\n* Where you can get more information about it.\n\nAttendees will learn the basics of this game-changer web technology, how to start to create high performance apps from scratch or migrate existing ones written in other languages like C/C++ or Rust to WebAssembly.",
-        "info": "Miguel is a Mozilla TechSpeaker who loves to evangelize about the latest and newest open web technologies to make a better web. He's being doing web developing since the past millenium and has been volunteering in many open source communities as coder, translator, writing about web technologies in his blog and as speaker at events. Currently works as a Operating Systems and Programming professor at Universidad del Táchira, Venezuela. From there, he tries to promote open technologies among students and local professionals by organizing tech events or the local meetups.",
-        "speaker": "Miguel Useche",
+        "title": "Crea aplicaciones de alto rendimiento con WebAssembly",
+        "description": "\nWebAssembly es un nuevo tipo de código que puede ser ejecutado por los navegadores actuales, a través de un binario que se ejecuta a velocidad casi nativas sin la necesidad de usar plugins. Esto trae un nuevo impacto a la web porque da una nueva forma de correr código de otros lenguajes a la web a velocidades casi nativas. Permitiendo contar con aplicaciones de alto rendimiento en el lado del navegador con tecnologías que no eran posibles anteriormente.\n\nAprende lo básico de esta tecnología, descubre como crear aplicaciones de alto rendimiento desde 0 o como migrar existentes a WebAssembly.",
+        "info": "Profesor universitario, desarrollador web. Voluntario de Mozilla desde el 2010 y ahora es Mozilla Tech Speaker para evangelizar sobre las últimas  tecnologías web abiertas y construir una mejor web.",
+        "speaker": "Miguel Ángel Useche",
+        "photo": "miguel_useche",
         "social": {
           "web": "https://skatox.com/",
           "twitter": "https://twitter.com/skatox",

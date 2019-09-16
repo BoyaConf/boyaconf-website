@@ -27,9 +27,10 @@ function setTalkData(talk) {
   console.log(talk);
   const speakerName = document.getElementById('speaker-name');
   if (speakerName) speakerName.innerText = talk ? talk.speaker || '' : '';
-  const photo = `${isEnglish ? './..' : '.'}/assets/img/speakers/${(talk.speaker
-    || '').toLowerCase().replace(/\s+/g, '-').replace(/ñ/g, 'n').replace(/ú/g, 'u')
-    .replace(/á/g, 'a')}.png`;
+  const photoName = talk ? talk.photo ||
+    (talk.speaker || '').toLowerCase().replace(/\s+/g, '-').replace(/ñ/g, 'n').replace(/ú/g, 'u')
+      .replace(/á/g, 'a').replace(/é/g, 'e') : 'x';
+  const photo = `${isEnglish ? './..' : '.'}/assets/img/speakers/${photoName}.png`;
   const speakerPhoto = document.getElementById('speaker-photo');
   if (speakerPhoto) {
     speakerPhoto.src = photo;
