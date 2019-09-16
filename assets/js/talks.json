@@ -36,6 +36,16 @@
           "twitter": "https://twitter.com/skatox",
           "linkedin": "https://www.linkedin.com/in/skatox/"
         }
+      },
+      "mbolivar": {
+        "title": "It takes some engineering to serve 41679 users \uD83D\uDE80",
+        "description": "\nStarting a new job may involve reaching a new project or an existing code base \uD83D\uDE31 and particularly in the second case is where we fail and it scares us the most, we don't want to ruin what's already built but we want to contribute as much as we can to the project , and that is why the history of the project is important \uD83D\uDCA1 We will talk about a history of how Python, React and a series of technical decisions helped to scale the service of a company, both good and bad decisions, and above all how to learn from this to not die trying to scale the project ☠️",
+        "info": "Informatics Engineer \uD83E\uDD13 Full Stack Developer at @apploi \uD83D\uDE80 Maintainer of the Spanish documentation of @reactjs ⚛︎ Collaborator in @gatsbyjs and other open source projects \uD83E\uDDD9\u200D♂️",
+        "speaker": "Miguel Bolivar",
+        "social": {
+          "twitter": "https://twitter.com/Darking360",
+          "linkedin": "https://www.linkedin.com/in/darking360/"
+        }
       }
     },
     "es": {
@@ -84,9 +94,9 @@
         }
       },
       "mbolivar": {
-        "title": "It takes some engineering to serve 41679 users",
-        "description": "\nStarting in a new position, in a new job is always a rollercoaster of emotions \uD83C\uDFA2 a thrill of goodwill and a lot of thinking on “please don’t screw this” \uD83E\uDD26\u200D♂️ any job! And most of the times we could enter a startup or a new project, but these projects could be already started, they can have an already built architecture \uD83C\uDFD7 they made some decisions along the way and as engineers we should care about that, to know where and why we’re heading that way, we should care about history \uD83E\uDD13 This is a story on how the company where I work now used Python to handle its architecture and engineers to give service 41679 clients \uD83D\uDD25 some story on when to split apps, which framework we choose and why \uD83E\uDD14 and some cover on important engineering topics like microservices, queueing, blocking operations and testing, oh yes, we have testing \uD83E\uDDD0 Come and check out how to scale, or at least not die trying \uD83D\uDE80",
-        "info": "Informatics Engineer, working on my thesis right now, implementing a sentiment analysis app focusing all the work towards the transformation of a traditional city into a smart city through smart public services. I work as a Full Stack Developer for @apploi \uD83D\uDE80 Also I'm a maintainer for the Spanish docs of @reactjs \uD83E\uDD13",
+        "title": "Se requiere algo de ingeniería para servir a 41679 usuarios \uD83D\uDE80",
+        "description": "\nEmpezar en un nuevo trabajo puede implicar llegar a un proyecto nuevo o a una base de código ya existente \uD83D\uDE31 y particularmente en el segundo caso es donde fallamos y nos asusta más, no queremos arruinar lo que ya existe pero queremos aportar lo más que podamos al proyecto, y por eso es importante la historia del proyecto \uD83D\uDCA1 Hablaremos de una historia de como Python, React y una serie de decisiones técnicas ayudaron a escalar el servicio de una empresa, decisiones tanto buenas como malas, y sobre todo como aprender de esto para no morir intentando escalar el proyecto ☠️",
+        "info": "Ingeniero en Informática \uD83E\uDD13 Desarrollador Full Stack en @apploi \uD83D\uDE80 Mantenedor de la documentación en español de @reactjs ⚛︎ Colaborador en @gatsbyjs y otros proyectos de código abierto \uD83E\uDDD9\u200D♂️ ",
         "speaker": "Miguel Bolivar",
         "social": {
           "twitter": "https://twitter.com/Darking360",
