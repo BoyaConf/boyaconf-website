@@ -14,7 +14,6 @@ function loadTalks() {
       try {
         const data = JSON.parse(xhr.responseText);
         talks = data.talks || {};
-        console.log(talks);
       } catch (e) {
         talks = null;
       }
@@ -23,17 +22,16 @@ function loadTalks() {
   xhr.send(null);
 };
 
-function setTalkData(talk) {
-  console.log(talk);
+function setTalkData(talk, photoUrl = '') {
   const speakerName = document.getElementById('speaker-name');
   if (speakerName) speakerName.innerText = talk ? talk.speaker || '' : '';
   const photoName = talk ? talk.photo ||
     (talk.speaker || '').toLowerCase().replace(/\s+/g, '-').replace(/ñ/g, 'n').replace(/ú/g, 'u')
-      .replace(/á/g, 'a').replace(/é/g, 'e') : 'x';
+      .replace(/á/g, 'a').replace(/é/g, 'e') : '';
   const photo = `${isEnglish ? './..' : '.'}/assets/img/speakers/${photoName}.png`;
   const speakerPhoto = document.getElementById('speaker-photo');
   if (speakerPhoto) {
-    speakerPhoto.src = photo;
+    speakerPhoto.src = photoUrl && photoUrl.length > 0 ? photoUrl : photo;
     speakerPhoto.alt = talk ? talk.speaker || '' : '';
   }
   const speakerInfo = document.getElementById('speaker-info');
@@ -47,7 +45,6 @@ function setTalkData(talk) {
   if (speakerLinks) {
     speakerLinks.innerHTML = '';
     for (const key of Object.keys(socialLinks)) {
-      console.log(key);
       const link = document.createElement('a');
       link.classList.add('mdi');
       link.classList.add(`mdi-${key.toLowerCase()}`);
@@ -68,7 +65,27 @@ function closeSpeakerModal() {
   setTalkData(null);
 }
 
-function openSpeakerModal(who) {
+function openSpeakerModal(event, who) {
+  const targetNode = event.target;
+  let targetNodeName = (targetNode ? targetNode.nodeName || '' : '').toLowerCase();
+
+  let photoUrl = '';
+  if (targetNodeName.length > 0) {
+    try {
+      let rightNode = null;
+      if (targetNodeName === 'img') {
+        rightNode = targetNode;
+      } else if (targetNodeName === 'p') {
+        rightNode = targetNode.parentNode.children[0];
+      } else {
+        rightNode = targetNode.children[0].children[0];
+      }
+      targetNodeName = (rightNode ? rightNode.nodeName || '' : '').toLowerCase();
+      if (targetNodeName === 'img') photoUrl = rightNode.src || '';
+    } catch (e) {
+    }
+  }
+
   if (typeof talks === 'undefined' || talks === null || Object.keys(talks).length <= 0) return;
   if (typeof who === 'undefined' || who === null || who.length <= 0) return;
   try {
@@ -79,7 +96,7 @@ function openSpeakerModal(who) {
         document.documentElement.classList.add('is-clipped');
       } catch (e) {
       }
-      setTalkData(rightTalk);
+      setTalkData(rightTalk, photoUrl);
       const modal = document.getElementById('speaker-modal');
       if (modal) modal.classList.add('is-active');
     }
