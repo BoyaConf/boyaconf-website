@@ -28,7 +28,9 @@ function setTalkData(talk, photoUrl = '') {
   const photoName = talk ? talk.photo ||
     (talk.speaker || '').toLowerCase().replace(/\s+/g, '-').replace(/ñ/g, 'n').replace(/ú/g, 'u')
       .replace(/á/g, 'a').replace(/é/g, 'e') : '';
-  const photo = `${isEnglish ? './..' : '.'}/assets/img/speakers/${photoName}.png`;
+  const photo = photoName.length > 0
+    ? `${isEnglish ? './..' : '.'}/assets/img/speakers/${photoName}.png`
+    : '';
   const speakerPhoto = document.getElementById('speaker-photo');
   if (speakerPhoto) {
     speakerPhoto.src = photoUrl && photoUrl.length > 0 ? photoUrl : photo;
