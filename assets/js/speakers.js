@@ -33,7 +33,7 @@ function setTalkData(talk, photoUrl = '') {
     : '';
   const speakerPhoto = document.getElementById('speaker-photo');
   if (speakerPhoto) {
-    speakerPhoto.src = photoUrl && photoUrl.length > 0 ? photoUrl : photo;
+    speakerPhoto.src = photoUrl && photoUrl.length > 0 ? photoUrl || '' : photo || '';
     speakerPhoto.alt = talk ? talk.speaker || '' : '';
   }
   const speakerInfo = document.getElementById('speaker-info');
