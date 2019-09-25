@@ -46,6 +46,26 @@
           "twitter": "https://twitter.com/Darking360",
           "linkedin": "https://www.linkedin.com/in/darking360/"
         }
+      },
+      "zulema": {
+        "title": "Vehicle tracking system in realtime using Ionic and Google Maps",
+        "description": "\nThe goal of this talk is to explain how to use Ionic Framework, Firebase and Google Maps for vehicle tracking system and I going to talk about the advantages of this system for the companies.",
+        "info": "Industrial and Systems Engineer, I worked in companies like Comteco LTDA and Pil Andina S.A in Bolivia. Currently, I'm working as Freelancer in web and mobile development.",
+        "speaker": "Zulema Vicente",
+        "social": {
+          "twitter": "https://twitter.com/vpzulema",
+          "linkedin": "https://www.linkedin.com/in/zulema-vicente-46b682135/"
+        }
+      },
+      "nathaly": {
+        "title": "Microservices, nightmare or blessing?",
+        "description": "\nMicroservices architecture is used when your application is not allocated in a single place o written in a single language. Thanks to them you can divide your application into different modules that have defined responsibilities and based on them you can choose the technology that best solves your problems.\n\nLet me tell you about my experience using microservices and give you a couple of tips that allow you to take the path of light, that way you can save yourself a few headaches in the future.",
+        "info": "I am a full stack software engineer with four years of experience. I specialize in Ruby and have professional experience working with Ruby and JavaScript.\nI love travel and support communities.",
+        "speaker": "Nathaly Villamor",
+        "social": {
+          "twitter": "https://twitter.com/nathalyvillamor",
+          "linkedin": "https://www.linkedin.com/in/nathalyvillamor/"
+        }
       }
     },
     "es": {
@@ -105,12 +125,12 @@
       },
       "nathaly": {
         "title": "Microservicios, ¿pesadilla o bendición?",
-        "description": "\nÚltimamente se habla mucho sobre el poder de los microservicios.\n\nDejame contarte sobre mi experiencia usando microservicios y darte un par de tips que te permitan tomar el camino de la luz, de esa forma podrás ahorrarte unos cuantos dolores de cabeza.",
-        "info": "Desarrolladora de software hace 4 años. Trabajo como CTO de ZonaWiki y apoyo como lider de desarrollo en proyectos de IOT. Mi fuerte es Ruby, pero he trabajado con javascript de la mano desde mis inicios. Actualmente lidero la comunidad de Ruby Bogotá y apoyo la organización de Bogotá JS y JS Conf Colombia.",
+        "description": "\nLa arquitectura de microservicios es aquella en la cual tu aplicación no está alojada en un solo lugar o escrita en una misma tecnología. Gracias a ellos puedes dividir tu aplicación en diferentes módulos que tengan responsabilidades definidas y en base a ellos puedes escoger la tecnología que mejor solucione sus problemas.\n\nDéjame contarte sobre mi experiencia usando microservicios y darte un par de tips que te permitan tomar el camino de la luz, de esa forma podrás ahorrarte unos cuantos dolores de cabeza en el futuro.",
+        "info": "Soy Ingeniera de Sistemas egresada de la Universidad Distrital. Tengo de 4 años de experiencia desarrollando software en tecnologías como Ruby y JavaScript.\nMe encanta viajar y apoyar comunidades.",
         "speaker": "Nathaly Villamor",
         "social": {
           "twitter": "https://twitter.com/nathalyvillamor",
-          "linkedin": "https://www.linkedin.com/in/nathaly-villamor-983b5570/"
+          "linkedin": "https://www.linkedin.com/in/nathalyvillamor/"
         }
       },
       "jesus": {
@@ -123,9 +143,9 @@
         }
       },
       "zulema": {
-        "title": "Seguimiento y rastreo de vehículos distribuidores en tiempo real usando Ionic y Google Maps",
+        "title": "Rastreo de vehículos distribuidores en tiempo real usando Ionic y Google Maps",
         "description": "\nLa logística de una empresa es un área bastante amplia entre ellas una de las más importantes es la distribución de sus productos. En este caso la tendencia de poder controlar la distribución de insumos o productos es uno de los ejemplos más relevantes, ya que el costo de distribución influye el 15% del costo unitario de un producto. Es ahí donde nace la necesidad de mejorar este proceso garantizando al cliente un producto de calidad con un precio justo. El objetivo de la charla es dar a conocer cómo Ionic y Google Maps nos ayuda a realizar un seguimiento y rastreo de vehículos distribuidores para controlar y tener el seguimiento de las rutas de los mismos y las ventajas que trae implementar este software en el proceso.",
-        "info": "Ingeniera Industrial y de Sistemas, boliviana, trabajó dentro del equipo de sistemas en la Empresa Comteco LTDA (Cooperativa Mixta de Telecomunicaciones Cochabamba Limitada). Pil Andina S. A. (Planta Industrializadora de Leche).",
+        "info": "Ingeniera Industrial y de Sistemas he trabajado en las empresas como Comteco LTDA y Pil Andina S.A. Actualmente me desenvuelvo como freelancer en desarrollo web y móvil.",
         "speaker": "Zulema Vicente",
         "social": {
           "twitter": "https://twitter.com/vpzulema",
@@ -146,8 +166,8 @@
       },
       "adrian": {
         "title": "Computational Complexity and JavaScript",
-        "description": "\nTBD",
-        "info": "Lead / Sr. Solutions Engineer en NodeSource y organizador de las comunidades MedellinJS, JSConfCO y NodeConfCO",
+        "description": "\nA talk to analyze the implications of heavy computations in JavaScript, we will visit the best practices and alternatives to do complex operations.",
+        "info": "Developer in love with Node.js, thirsty for new technologies, official Node.js Collaborator  - organizer @MedellinJS, @JSConfCO and @NodeConfCO",
         "speaker": "Adrián Estrada",
         "social": {
           "twitter": "https://twitter.com/edsadr"
