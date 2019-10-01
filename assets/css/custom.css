@@ -1171,7 +1171,7 @@ a:focus {
 
 @media screen and (min-width: 800px) {
     #subscribe .form {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -1355,4 +1355,26 @@ a:focus {
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+#mapid {
+    min-height: 364px;
+    width: 98%;
+    text-align: center;
+}
+
+.leaflet-pane {
+    z-index: 1 !important;
+}
+
+.leaflet-top, .leaflet-bottom {
+    z-index: 2 !important;
+}
+
+.leaflet-popup-content {
+    font-size: .9rem;
+}
+
+#subscribe .card .card-content.has-form {
+    padding-top: 0;
 }

@@ -55,6 +55,10 @@
     <meta content="BoyaConf" name="apple-mobile-web-app-title">
     <meta content="BoyaConf" name="application-name">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+
     <link href="./../assets/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="./../assets/css/bulma.css" rel="stylesheet">
     <link href="./../assets/css/custom.css" rel="stylesheet">
@@ -371,7 +375,7 @@
                   To help us in our goal of creating a welcoming learning
                   environment for high quality, relevant, and up-to-date talks, we
                   need the support from companies.
-                  <br>
+                  <br><br>
                   <b>If you are interested in
                      sponsoring us and supporting our community, you can check the
                      details and available sponsorship opportunities on
@@ -502,31 +506,31 @@
     </section>
 
     <hr>
-    <section class="hero is-medium" id="subscribe">
+    <section class="hero is-medium">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <div class="section-title-container">
-            <h1 class="section-title">Stay tuned!</h1>
-          </div>
           <div class="columns is-multiline is-mobile is-centered">
-            <div class="column is-12-mobile is-6-tablet is-6-desktop">
-              <div class="card">
-                <div class="card-content has-text-start">
-                  <p>
-                    Join our mailing list or our
-                    <a href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33"
-                       target="_blank">Twist
-                                       team</a>
-                    where you'll also be able to connect and contact other
-                    (potential) attendees.
-                  </p>
-                </div>
+            <div class="column is-12-mobile is-6-tablet is-6-desktop" id="venue">
+              <div class="section-title-container has-text-centered">
+                <h2 class="section-title" style="text-align: center !important;">Ubicación</h2>
               </div>
+              <div id="mapid"></div>
+              <br/>
             </div>
-            <div class="column is-12-mobile is-6-tablet is-6-desktop">
+            <div class="column is-12-mobile is-6-tablet is-6-desktop" id="subscribe">
               <div class="card">
+                <div class="section-title-container has-text-centered">
+                  <h2 class="section-title" style="text-align: center !important;">Noticias</h2>
+                </div>
                 <div class="card-content has-form has-text-start">
                   <div class="form" id="sub-form">
+                    <p>
+                      Join our mailing list or our
+                      <a href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33"
+                         target="_blank">Twist team</a>
+                      where you'll also be able to connect and contact other (potential) attendees.
+                    </p>
+                    <br/>
                     <div class="field">
                       <label class="label" for="fields[name]">
                         Name&nbsp;<span class="red">*</span>
@@ -641,7 +645,11 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
     <script src="./../assets/js/main.js"></script>
+    <script src="./../assets/js/venue.js"></script>
     <script src="./../assets/js/speakers.js"></script>
   </body>
 </html>
