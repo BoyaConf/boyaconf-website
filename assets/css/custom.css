@@ -1018,18 +1018,18 @@ a:focus {
     display: block;
     height: auto;
     width: auto;
-    max-height: 216px;
+    max-height: 256px;
     align-self: center;
     vertical-align: middle;
     margin: auto;
 }
 
 #our-sponsors #gold .card .card-content img {
-    max-height: 204px;
+    max-height: 212px;
 }
 
 #our-sponsors #silver .card .card-content img {
-    max-height: 180px;
+    max-height: 162px;
 }
 
 #our-sponsors #community .card .card-content img {
