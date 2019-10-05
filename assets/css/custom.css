@@ -1378,3 +1378,18 @@ a:focus {
 #subscribe .card .card-content.has-form {
     padding-top: 0;
 }
+
+.is-shown-desktop-only {
+    display: none;
+    cursor: default !important;
+}
+
+.is-shown-desktop-only * {
+    cursor: default !important;
+}
+
+@media screen and (min-width: 1024px), print {
+    .is-shown-desktop-only {
+        display: block !important;
+    }
+}
