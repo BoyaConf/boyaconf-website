@@ -379,6 +379,14 @@
                     </div>
                   </a>
                 </div>
+                <div class="column is-12-mobile is-4-tablet is-3-desktop">
+                  <div class="card has-same-height" onclick="showDonationsModal()"
+                       style="cursor: pointer;">
+                    <div class="card-content has-text-centered">
+                      <img alt="Colombia" src="./../assets/img/sponsors/colombia.png">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -400,9 +408,6 @@
             <div class="sponsor-section" id="community">
               <h3><a><b>Community</b></a></h3>
               <div class="columns is-centered is-multiline is-mobile">
-                <div class="column is-6-mobile is-3-tablet is-2-desktop is-shown-desktop-only">
-                  <a class="card has-same-height"> </a>
-                </div>
                 <div class="column is-6-mobile is-3-tablet is-2-desktop">
                   <a class="card has-same-height" href="https://www.jetbrains.com/"
                      target="_blank">
@@ -411,34 +416,6 @@
                            src="./../assets/img/sponsors/jetbrains.png">
                     </div>
                   </a>
-                </div>
-                <div class="column is-6-mobile is-3-tablet is-2-desktop">
-                  <a class="card has-same-height" href="https://doist.com/"
-                     target="_blank">
-                    <div class="card-content has-text-centered">
-                      <img alt="doist"
-                           src="./../assets/img/sponsors/doist.png">
-                    </div>
-                  </a>
-                </div>
-                <div class="column is-6-mobile is-3-tablet is-2-desktop">
-                  <a class="card has-same-height" href="https://zeit.co/"
-                     target="_blank">
-                    <div class="card-content has-text-centered">
-                      <img alt="Zeit HQ" src="./../assets/img/sponsors/zeit.svg">
-                    </div>
-                  </a>
-                </div>
-                <div class="column is-6-mobile is-3-tablet is-2-desktop">
-                  <a class="card has-same-height" href="https://www.mozilla.org"
-                     target="_blank">
-                    <div class="card-content has-text-centered">
-                      <img alt="Mozilla" src="./../assets/img/sponsors/mozilla.png">
-                    </div>
-                  </a>
-                </div>
-                <div class="column is-6-mobile is-3-tablet is-2-desktop is-shown-desktop-only">
-                  <a class="card has-same-height"> </a>
                 </div>
                 <div class="column is-6-mobile is-3-tablet is-2-desktop">
                   <a class="card has-same-height" href="https://www.producthunt.com/"
@@ -473,6 +450,39 @@
                     </div>
                   </a>
                 </div>
+                <div class="column is-6-mobile is-3-tablet is-2-desktop">
+                  <a class="card has-same-height" href="https://colombia-dev.org/"
+                     target="_blank">
+                    <div class="card-content has-text-centered">
+                      <img alt="Colombia Dev" src="./../assets/img/sponsors/colombia-dev.png">
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6-mobile is-3-tablet is-2-desktop">
+                  <a class="card has-same-height" href="https://www.mozilla.org"
+                     target="_blank">
+                    <div class="card-content has-text-centered">
+                      <img alt="Mozilla" src="./../assets/img/sponsors/mozilla.png">
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6-mobile is-3-tablet is-2-desktop">
+                  <a class="card has-same-height" href="https://zeit.co/"
+                     target="_blank">
+                    <div class="card-content has-text-centered">
+                      <img alt="Zeit HQ" src="./../assets/img/sponsors/zeit.svg">
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6-mobile is-3-tablet is-2-desktop">
+                  <a class="card has-same-height" href="https://doist.com/"
+                     target="_blank">
+                    <div class="card-content has-text-centered">
+                      <img alt="doist"
+                           src="./../assets/img/sponsors/doist.png">
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -491,78 +501,6 @@
               </div>
               <div id="mapid"></div>
               <br/>
-            </div>
-            <div class="column is-12-mobile is-6-tablet is-6-desktop" id="subscribe">
-              <div class="card">
-                <div class="section-title-container has-text-centered">
-                  <h2 class="section-title" style="text-align: center !important;">Stay tuned!</h2>
-                </div>
-                <div class="card-content has-form has-text-start">
-                  <div class="form" id="sub-form">
-                    <p>
-                      Join our mailing list or our
-                      <a href="https://twist.com/j/cfd6548013de7b42fd85eea379dc7e33"
-                         target="_blank">Twist team</a>
-                      where you'll also be able to connect and contact other (potential) attendees.
-                    </p>
-                    <br/>
-                    <div class="field">
-                      <label class="label" for="fields[name]">
-                        Name&nbsp;<span class="red">*</span>
-                      </label>
-                      <div class="control is-expanded has-icons-left has-icons-right has-text-start ml-validate-required">
-                        <input
-                          aria-required="true"
-                          class="input" data-inputmask=""
-                          id="fields[name]"
-                          name="fields[name]"
-                          placeholder="Name"
-                          required
-                          type="text">
-                        <span class="icon is-left is-small mdi mdi-account mdi-24px"></span>
-                      </div>
-                    </div>
-                    <div class="field">
-                      <label class="label" for="fields[email]">
-                        Email&nbsp;<span class="red">*</span>
-                      </label>
-                      <div class="control is-expanded has-icons-left has-icons-right has-text-start ml-validate-required">
-                        <input
-                          aria-required="true"
-                          class="input" data-inputmask=""
-                          id="fields[email]"
-                          name="fields[email]"
-                          placeholder="Email"
-                          required
-                          type="email">
-                        <span class="icon is-left is-small mdi mdi-email mdi-24px"></span>
-                      </div>
-                    </div>
-                    <div class="field is-grouped is-grouped-right">
-                      <p class="help green-dark is-hidden" id="sub-ok">
-                        We'll get back to you soon
-                      </p>
-                      <p class="help red-dark is-hidden"
-                         id="sub-fields-error">
-                        All fields are required!
-                      </p>
-                      <p class="help red-dark is-hidden" id="sub-error">
-                        An unexpected error occurred. Please try again
-                        later.
-                      </p>
-                    </div>
-                    <div class="field is-grouped is-grouped-right">
-                      <div class="control">
-                        <button class="button is-primary"
-                                id="sub-btn" onclick="return validateForm(event);"
-                                type="button">
-                          Join
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -591,6 +529,34 @@
     <button class="back-to-top" id="to-top" onclick="goToTop();">
       <span class="mdi mdi-24px mdi-chevron-up"></span>
     </button>
+
+    <div class="modal" id="donations-modal">
+      <div class="modal-background" onclick="closeDonationsModal()"></div>
+      <div class="modal-card">
+        <header class="modal-card-head has-text-right">
+          <p><strong class="is-size-5">Thanks community!</strong></p>
+          <button aria-label="close" onclick="closeDonationsModal()">
+            <span class="mdi mdi-close mdi-24px"></span>
+          </button>
+        </header>
+        <section class="modal-card-body">
+          <p>
+            Thanks to all these amazing people and their donations, we achieved the equivalent of a
+            Gold sponsor. Thank you so much for your support! 🤗
+          </p>
+          <br/>
+          <p>Listed in no particular order:</p>
+          <div class="columns is-multiline is-mobile is-centered">
+            <div class="column is-12-mobile is-4-tablet is-4-desktop" id="donations-a">
+            </div>
+            <div class="column is-12-mobile is-4-tablet is-4-desktop" id="donations-b">
+            </div>
+            <div class="column is-12-mobile is-4-tablet is-4-desktop" id="donations-c">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <div class="modal" id="speaker-modal">
       <div class="modal-background" onclick="closeSpeakerModal()"></div>
@@ -626,5 +592,6 @@
     <script src="./../assets/js/main.js"></script>
     <script src="./../assets/js/venue.js"></script>
     <script src="./../assets/js/speakers.js"></script>
+    <script src="./../assets/js/donations.js"></script>
   </body>
 </html>

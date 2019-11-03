@@ -952,7 +952,7 @@ a:focus {
 }
 
 #our-sponsors .sponsor-section {
-    margin-top: 3.2rem;
+    margin-top: 2.2rem;
 }
 
 #our-sponsors .sponsor-section:not(#community) h3,
@@ -963,7 +963,7 @@ a:focus {
 
 #our-sponsors .sponsor-section#community h3,
 #our-sponsors .sponsor-section#community h4 {
-    margin-bottom: -0.8rem;
+    margin-bottom: 0;
     cursor: auto !important;
 }
 
@@ -1392,4 +1392,8 @@ a:focus {
     .is-shown-desktop-only {
         display: block !important;
     }
+}
+
+#our-sponsors .sponsor-section#gold {
+    margin-top: 0;
 }
