@@ -2,6 +2,7 @@
 
 :root {
     --red: #eb3b5a;
+    --red-light: #ef627b;
     --red-dark: #d43551;
     --green: #4dcc89;
     --green-mid: #3ea36e;
@@ -129,6 +130,9 @@ b {
     font-weight: 800;
 }
 
+.is-white {
+    color: #fff;
+}
 
 .green {
     color: var(--green) !important;
@@ -144,6 +148,10 @@ b {
 
 .red {
     color: var(--red) !important;
+}
+
+.red-light {
+    color: var(--red-light) !important;
 }
 
 .red-dark {
@@ -237,4 +245,34 @@ b {
     --shadow-col-a: rgba(32, 191, 107, .4);
     --shadow-col-b: rgba(32, 191, 107, .28);
     --shadow-col-c: rgba(32, 191, 107, .24);
+}
+
+.button.is-small {
+    font-size: .95rem;
+}
+
+.buttons .button:not(:last-child):not(.is-fullwidth) {
+    margin-right: 1.2rem;
+}
+
+.buttons.is-centered:not(.has-addons) .button:not(.is-fullwidth) {
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon {
+    color: #bbbbbb;
+}
+
+::placeholder {
+    color: #bbbbbb;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #bbbbbb;
+}
+
+::-ms-input-placeholder {
+    color: #bbbbbb;
 }
