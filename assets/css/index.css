@@ -1,0 +1,40 @@
+.hero.has-logo {
+    background-color: var(--dark-blue);
+    background-image: url("./../img/photos/last.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.hero.has-logo .hero-body {
+    background-color: rgba(0, 32, 43, .75);
+}
+
+.logo-cont {
+    color: #fff;
+    -webkit-text-stroke: 1px var(--dark-blue);
+    text-shadow: 1px 1px 0 var(--dark-blue),
+    -1px -1px 0 var(--dark-blue),
+    1px -1px 0 var(--dark-blue),
+    -1px 1px 0 var(--dark-blue),
+    1px 1px 0 var(--dark-blue);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.logo-cont img.logo {
+    max-width: 144px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.4rem;
+}
+
+.logo-text span {
+    font-weight: 900;
+}

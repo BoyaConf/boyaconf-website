@@ -60,19 +60,13 @@ h3,
 }
 
 h4,
-.content h4,
-#our-sponsors #silver h3,
-#our-sponsors #silver .content h3 {
+.content h4 {
     font-size: 1.7rem;
     font-weight: 700;
 }
 
 h5,
-.content h5,
-#our-sponsors #community h3,
-#our-sponsors #community .content h3,
-#our-sponsors #partners h3,
-#our-sponsors #partners .content h3 {
+.content h5 {
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -133,4 +127,114 @@ body {
 
 b {
     font-weight: 800;
+}
+
+
+.green {
+    color: var(--green) !important;
+}
+
+.green-mid {
+    color: var(--green-mid) !important
+}
+
+.green-dark {
+    color: var(--green-dark) !important
+}
+
+.red {
+    color: var(--red) !important;
+}
+
+.red-dark {
+    color: var(--red-dark) !important;
+}
+
+.is-primary {
+    background-color: var(--green-mid) !important;
+}
+
+.button {
+    font-family: "Manrope", sans-serif !important;
+    min-width: 48px;
+    font-weight: 600;
+    border-color: rgba(0, 0, 0, 0);
+    --shadow-col-a: rgba(170, 170, 170, .4);
+    --shadow-col-b: rgba(170, 170, 170, .28);
+    --shadow-col-c: rgba(170, 170, 170, .24);
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    -webkit-box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+    -moz-box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+    box-shadow: 0 3px 1px -2px var(--shadow-col-a), 0 2px 2px 0 var(--shadow-col-b), 0 1px 5px 0 var(--shadow-col-c) !important;
+}
+
+.button:hover,
+.button:focus,
+.button.is-active {
+    background-color: #f5f5f5;
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+    -moz-box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+    box-shadow: 0 2px 4px -1px var(--shadow-col-a), 0 4px 5px 0 var(--shadow-col-b), 0 1px 10px 0 var(--shadow-col-c) !important;
+}
+
+.button.simple,
+.button.simple:hover,
+.button.simple:focus,
+.button.simple.is-active {
+    border-color: #eee;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.buttons .button {
+    margin-bottom: 1.2rem;
+}
+
+.button .mdi {
+    margin-right: .8rem;
+}
+
+.button.is-primary {
+    background-color: var(--green-mid) !important;
+    --shadow-col-a: rgba(32, 191, 107, .4);
+    --shadow-col-b: rgba(32, 191, 107, .28);
+    --shadow-col-c: rgba(32, 191, 107, .24);
+}
+
+.button.is-primary.is-hovered,
+.button.is-primary.is-active,
+.button.is-primary:hover,
+.button.is-primary:focus,
+.button.is-primary:active {
+    background-color: var(--green-dark) !important;
+    --shadow-col-a: rgba(26, 153, 86, .4);
+    --shadow-col-b: rgba(26, 153, 86, .28);
+    --shadow-col-c: rgba(26, 153, 86, .24);
+}
+
+.button.is-primary.is-light {
+    color: var(--dark-blue);
+    background-color: var(--green) !important;
+    --shadow-col-a: rgba(77, 204, 137, .4);
+    --shadow-col-b: rgba(77, 204, 137, .28);
+    --shadow-col-c: rgba(77, 204, 137, .24);
+}
+
+.button.is-primary.is-light.is-hovered,
+.button.is-primary.is-light.is-active,
+.button.is-primary.is-light:hover,
+.button.is-primary.is-light:focus,
+.button.is-primary.is-light:active {
+    color: var(--dark-blue);
+    background-color: var(--green-mid) !important;
+    --shadow-col-a: rgba(32, 191, 107, .4);
+    --shadow-col-b: rgba(32, 191, 107, .28);
+    --shadow-col-c: rgba(32, 191, 107, .24);
 }
